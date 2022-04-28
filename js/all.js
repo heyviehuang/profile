@@ -44,27 +44,21 @@ $(document).ready(function() {
         direction: "both"
     });
 
-    // $('.nav-btnMenu').click(function(event) {
-    //     event.preventDefault();
-    //     $('.nav-menuList-mb').toggleClass('nav-menuList-mb-fadeIn');
-    //     $('#nav-btnMenu').text($(this).text() == 'close' ? 'menu' : 'close');
-    // });
+    $('.btnTop').click(function(event) {
+        event.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
 
-    // $('.btnTop').click(function(event) {
-    //     event.preventDefault();
-    //     $('html,body').animate({
-    //         scrollTop: 0
-    //     }, 700);
-    // });
-
-    // function showBtnCondition() {
-    //     if ($(this).scrollTop() > 1200) {
-    //         $('.btnTop').fadeIn();
-    //     } else {
-    //         $('.btnTop').fadeOut();
-    //     }
-    // }
-    // $(window).scroll(showBtnCondition);
+    function showBtnCondition() {
+        if ($(this).scrollTop() > 1200) {
+            $('.btnTop').fadeIn();
+        } else {
+            $('.btnTop').fadeOut();
+        }
+    }
+    $(window).scroll(showBtnCondition);
 
     var swiper = new Swiper(".paintingWork-swiper", {
         spaceBetween: 30,
