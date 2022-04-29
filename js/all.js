@@ -33,6 +33,13 @@ $(document).ready(function() {
         size: 3,
         image: "img/img-bgItem-snow.png"
     });
+    $("canvas.flake").let_it_snow({
+        windPower: 2,
+        speed: 0.5,
+        count: 2,
+        size: 10,
+        image: "img/img-bgItem-snow.png"
+    });
 
     $(".anim-sparkle").sparkle({
         color: "#FFFFFF",
