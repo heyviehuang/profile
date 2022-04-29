@@ -94,12 +94,29 @@ $(document).ready(function() {
                 spaceBetween: 8,
                 slidesPerGroup: 1,
                 loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
             });
         } else {
             var swiper = new Swiper(".modelingWorkBy3dsMax-swiper", {
                 slidesPerView: 3,
                 spaceBetween: 16,
-                freeMode: true,
+                slidesPerGroup: 1,
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
             });
         }
     }
