@@ -31,6 +31,7 @@ img {
 a {
     display: block;
     text-decoration: none;
+    transition: all .6s;
 }
 
 button {
@@ -64,6 +65,15 @@ button {
 .btnTop:hover {
     transform: translateY(-5px);
     background-color: rgb(13, 56, 106, 0.8);
+}
+
+.webDesign-list-a:hover,
+.siteLink-list-a:hover,
+.swiper-slide:hover {
+    transition: .6s;
+    transform: scale(1.06);
+    filter: drop-shadow(0 1px 6px #ffffff);
+    -webkit-filter: drop-shadow(0 1px 6px #ffffff);
 }
 
 @media (max-width:768px) {
@@ -450,29 +460,54 @@ p {
     color: #367CCA;
 }
 
-.gallery-titleDecoration,
-.careerRecord-titleDecoration {
+.gallery .title {
     justify-content: center;
-    position: relative;
-    border-bottom: #367CCA 1px solid;
+    margin-bottom: 0;
 }
 
-.gallery-titleDecoration::after {
-    content: "";
-    position: absolute;
-    bottom: -22px;
-    width: 222px;
-    height: 21px;
-    background: url("../img/img-gallery-titleDecoration.svg") no-repeat;
+.careerRecord-titleDecoration {
+    justify-content: center;
 }
 
 .webDesign-content,
 .paintingWork-content,
 .gameWorkByUnity-content,
 .modelingWorkBy3dsMax-content {
+    position: relative;
     padding: 32px;
     background: url("../img/img-bg-gallery-item.png") center;
     border: rgb(54, 124, 202) 1px solid;
+}
+
+.webDesign-content::before,
+.paintingWork-content::before,
+.gameWorkByUnity-content::before,
+.modelingWorkBy3dsMax-content::before,
+.webDesign-content::after,
+.paintingWork-content::after,
+.gameWorkByUnity-content::after,
+.modelingWorkBy3dsMax-content::after {
+    content: "";
+    position: absolute;
+    transform: translateX(-50%);
+    width: 222px;
+    height: 21px;
+    background: url("../img/img-gallery-titleDecoration.svg") no-repeat;
+}
+
+.webDesign-content::before,
+.paintingWork-content::before,
+.gameWorkByUnity-content::before,
+.modelingWorkBy3dsMax-content::before {
+    top: 0;
+}
+
+.webDesign-content::after,
+.paintingWork-content::after,
+.gameWorkByUnity-content::after,
+.modelingWorkBy3dsMax-content::after {
+    bottom: 0;
+    transform: translateX(-50%) scaleY(-1);
 }
 
 .paintingWork-content-p,
@@ -486,6 +521,14 @@ p {
 .webDesign-list {
     display: flex;
     justify-content: space-around;
+}
+
+.webDesign-list>li {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
 }
 
 .swiper {
@@ -538,6 +581,9 @@ p {
         flex-direction: column;
         align-items: center;
     }
+    .webDesign-list>li {
+        margin-bottom: 64px;
+    }
 }
 
 .careerRecord {
@@ -548,7 +594,6 @@ p {
 }
 
 .careerRecord-titleDecoration {
-    border: none;
     margin-bottom: 16px;
 }
 

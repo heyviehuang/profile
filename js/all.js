@@ -124,7 +124,6 @@ $(document).ready(function() {
     $(window).scroll(function() {
         var scrollPos = $(window).scrollTop();
         var windowHeight = $(window).height();
-        console.log(scrollPos, windowHeight);
         // animated
         $('.animated-t,.animated-r,.animated-b,.animated-l,.animated-m').each(function() {
             var thisPos = $(this).offset().top;
