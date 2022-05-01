@@ -108,11 +108,11 @@ button {
 .education,
 .workExperience,
 .skill,
+.autobiography,
 .webDesign,
 .paintingWork,
 .gameWorkByUnity,
 .modelingWorkBy3dsMax,
-.autobiography,
 .license,
 .studyExperience,
 .siteLink {
@@ -120,13 +120,13 @@ button {
     padding-bottom: 32px;
 }
 
-.introduceMyself {
+.careerRecord {
     padding-top: 64px;
 }
 
 .personalInformation,
 .gallery,
-.introduceMyself {
+.careerRecord {
     margin-bottom: 240px;
 }
 
@@ -165,7 +165,7 @@ h6 {
 p {
     color: #0d386a;
     font-size: 16px;
-    line-height: 1.7;
+    line-height: 2;
 }
 
 .price-num {
@@ -325,6 +325,13 @@ p {
     background: -o-linear-gradient(180deg, rgb(54, 124, 202) 0%, rgba(72, 166, 238, 0.5) 70%, rgba(54, 123, 202, 0) 100%);
 }
 
+.personalInformation-item3-bg {
+    background: linear-gradient(180deg, rgb(72, 166, 238, 0.5) 0, rgba(54, 124, 202) 30%, rgb(54, 124, 202) 70%, rgba(72, 166, 238, 0.5) 100%);
+    background: -webkit-linear-gradient(180deg, rgb(72, 166, 238, 0.5) 0, rgba(54, 124, 202) 30%, rgb(54, 124, 202) 70%, rgba(72, 166, 238, 0.5) 100%);
+    background: -moz-linear-gradient(180deg, rgb(72, 166, 238, 0.5) 0, rgba(54, 124, 202) 30%, rgb(54, 124, 202) 70%, rgba(72, 166, 238, 0.5) 100%);
+    background: -o-linear-gradient(180deg, rgb(72, 166, 238, 0.5) 0, rgba(54, 124, 202) 30%, rgb(54, 124, 202) 70%, rgba(72, 166, 238, 0.5) 100%);
+}
+
 .personalInformation .starsSwitch {
     display: none;
 }
@@ -380,6 +387,18 @@ p {
     font-weight: 700;
 }
 
+.autobiography {
+    padding-bottom: 64px;
+}
+
+.autobiography .title {
+    justify-content: center;
+}
+
+.autobiography-content {
+    color: #fff;
+}
+
 @media (max-width:768px) {
     .headShot {
         width: 50%;
@@ -413,6 +432,9 @@ p {
         margin: 40px auto;
         transform: rotateZ(-90deg);
     }
+    .personalInformation-item3-bg {
+        background-color: rgb(54, 124, 202);
+    }
 }
 
 .gallery {
@@ -429,7 +451,7 @@ p {
 }
 
 .gallery-titleDecoration,
-.introduceMyself-titleDecoration {
+.careerRecord-titleDecoration {
     justify-content: center;
     position: relative;
     border-bottom: #367CCA 1px solid;
@@ -518,19 +540,19 @@ p {
     }
 }
 
-.introduceMyself {
+.careerRecord {
     background: linear-gradient(rgb(54, 124, 202) 0%, rgb(54, 124, 202) 34%, #9CC8EB 88%, #9cc8eb00 100%);
     background: -webkit-linear-gradient(rgb(54, 124, 202) 0%, rgb(54, 124, 202) 34%, #9CC8EB 88%, #9cc8eb00 100%);
     background: -moz-linear-gradient(rgb(54, 124, 202) 0%, rgb(54, 124, 202) 34%, #9CC8EB 88%, #9cc8eb00 100%);
     background: -o-linear-gradient(rgb(54, 124, 202) 0%, rgb(54, 124, 202) 34%, #9CC8EB 88%, #9cc8eb00 100%);
 }
 
-.introduceMyself-titleDecoration {
+.careerRecord-titleDecoration {
     border: none;
     margin-bottom: 16px;
 }
 
-.introduceMyself-titleDecoration-line {
+.careerRecord-titleDecoration-line {
     display: flex;
     align-items: center;
     margin: -16px 0 16px;
@@ -540,7 +562,7 @@ p {
     margin: 0 16px;
     width: 37px;
     height: 17px;
-    background: url("../img/img-introduceMyself-titleDecoration.svg") no-repeat center;
+    background: url("../img/img-careerRecord-titleDecoration.svg") no-repeat center;
     background-size: contain;
 }
 
@@ -576,7 +598,7 @@ p {
     transform: translate(0, -50%) rotate(45deg);
 }
 
-.introduceMyself-item-contentBg {
+.careerRecord-item-contentBg {
     position: relative;
     margin: 3.5px;
     padding: 32px;
@@ -584,10 +606,10 @@ p {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-.introduceMyself-item-contentBg::before,
-.introduceMyself-item-contentBg::after,
-.introduceMyself-frameDecoration::before,
-.introduceMyself-frameDecoration::after {
+.careerRecord-item-contentBg::before,
+.careerRecord-item-contentBg::after,
+.careerRecord-frameDecoration::before,
+.careerRecord-frameDecoration::after {
     content: "";
     position: absolute;
     width: 7px;
@@ -595,22 +617,22 @@ p {
     background-color: #fff;
 }
 
-.introduceMyself-item-contentBg::before {
+.careerRecord-item-contentBg::before {
     top: -3.5px;
     left: -3.5px;
 }
 
-.introduceMyself-item-contentBg::after {
+.careerRecord-item-contentBg::after {
     top: -3.5px;
     right: -3.5px;
 }
 
-.introduceMyself-frameDecoration::before {
+.careerRecord-frameDecoration::before {
     bottom: -3.5px;
     left: -3.5px;
 }
 
-.introduceMyself-frameDecoration::after {
+.careerRecord-frameDecoration::after {
     bottom: -3.5px;
     right: -3.5px;
 }
