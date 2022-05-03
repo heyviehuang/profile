@@ -342,6 +342,9 @@ p {
     .btn-navItem-a {
         padding: 24px 0;
     }
+    .logo-main {
+        transform: translate(-50%, -50%) scale(0.7);
+    }
 }
 
 
@@ -818,8 +821,64 @@ p {
     height: 100%;
     overflow: hidden;
     z-index: -1;
-    background: url("../img/img-bg-main.jpg") bottom no-repeat;
+    background: linear-gradient( #8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
+    background: -webkit-linear-gradient( #8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
+    background: -moz-linear-gradient( #8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
+    background: -o-linear-gradient( #8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
+}
+
+.cloudL,
+.cloudR {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 1898px;
+    height: 601px;
+    background: url("../img/img-bgItem-cloud.png") repeat-x;
     background-size: cover;
+    animation-duration: 200s;
+    animation-iteration-count: infinite;
+    transition: .1s;
+}
+
+.cloudL {
+    left: 0;
+    animation-name: cloudAnimL;
+}
+
+.cloudR {
+    left: 130%;
+    animation-name: cloudAnimR;
+}
+
+@keyframes cloudAnimL {
+    0% {
+        opacity: 0.9;
+        transform: translateX(-70%);
+    }
+    50% {
+        opacity: 0.7;
+        transform: translateX(-50%);
+    }
+    100% {
+        opacity: 0.9;
+        transform: translateX(-70%);
+    }
+}
+
+@keyframes cloudAnimR {
+    0% {
+        opacity: 0.9;
+        transform: translateX(-60%);
+    }
+    50% {
+        opacity: 0.7;
+        transform: translateX(-40%);
+    }
+    100% {
+        opacity: 0.9;
+        transform: translateX(-60%);
+    }
 }
 
 .dynamicBg {
@@ -827,4 +886,15 @@ p {
     top: 0;
     left: 0;
     position: fixed;
+}
+
+@media (max-width:768px) {
+    .dynamicBackground-container {
+        background: url("../img/img-bg-main.jpg") bottom no-repeat;
+        background-size: cover;
+    }
+    .cloudL,
+    .cloudR {
+        display: none;
+    }
 }
