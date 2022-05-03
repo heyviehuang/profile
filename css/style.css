@@ -540,6 +540,11 @@ p {
     transform: translateX(-50%) scaleY(-1);
 }
 
+.webDesign-list .webDesign-content-p {
+    margin-bottom: 24px;
+    color: #1b487c;
+}
+
 .paintingWork-content-p,
 .natsuMatsuri-p,
 .windFantasy-p,
