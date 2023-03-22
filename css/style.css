@@ -198,7 +198,7 @@ h5 {
 
 h6 {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.7;
 }
 
@@ -215,6 +215,11 @@ p {
 @media (max-width:768px) {
     h3 {
         font-size: 32px;
+    }
+    .personalInformation,
+    .gallery,
+    .careerRecord {
+        margin-bottom: 32px;
     }
 }
 
@@ -305,8 +310,8 @@ p {
     background: rgba(255, 255, 255, 0.5);
     -webkit-transition: -webkit-transform 0.6s;
     transition: transform 0.6s;
-    -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 220%, 0);
-    transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 220%, 0);
+    -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 300%, 0);
+    transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 300%, 0);
 }
 
 .btn-navItem-container:hover .btn-navItem-a::before,
@@ -401,16 +406,18 @@ p {
     margin-right: 16px;
 }
 
-.workExperience .title {
-    justify-content: flex-end;
+.workExperience-list-pc {
+    width: 100%;
+    text-align: left;
 }
 
-.workExperience-list {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    text-align: right;
+.workExperience-arrow {
+    margin: 40px auto 40px 0;
+    transform: rotateZ(-90deg);
+}
+
+.workExperience-list-mb {
+    display: none;
 }
 
 .skill-list {
@@ -454,7 +461,6 @@ p {
         display: block;
     }
     .education,
-    .workExperience-list,
     .skill-list {
         flex-direction: column;
         justify-content: center;
@@ -471,14 +477,25 @@ p {
         margin-left: 0px;
         text-align: center;
     }
-    .workExperience-arrow {
-        margin: 40px auto;
-        transform: rotateZ(-90deg);
-    }
     .personalInformation-item3-bg {
         background-color: rgb(54, 124, 202);
     }
+    .workExperience-list-pc {
+        display: none;
+    }
+    .workExperience-list-mb {
+        display: block;
+        text-align: center;
+    }
+    .workExperience-list-mb td {
+        width: 1000px;
+    }
+    .workExperience-arrow {
+        margin: 40px auto;
+    }
 }
+
+@media (max-width:576px) {}
 
 .gallery {
     position: relative;
@@ -626,10 +643,10 @@ p {
 }
 
 .careerRecord {
-    background: linear-gradient(rgb(54, 124, 202) 0%, rgb(54, 124, 202) 34%, #9CC8EB 88%, #9cc8eb00 100%);
-    background: -webkit-linear-gradient(rgb(54, 124, 202) 0%, rgb(54, 124, 202) 34%, #9CC8EB 88%, #9cc8eb00 100%);
-    background: -moz-linear-gradient(rgb(54, 124, 202) 0%, rgb(54, 124, 202) 34%, #9CC8EB 88%, #9cc8eb00 100%);
-    background: -o-linear-gradient(rgb(54, 124, 202) 0%, rgb(54, 124, 202) 34%, #9CC8EB 88%, #9cc8eb00 100%);
+    background: linear-gradient(rgb(54, 124, 202, 0%) 0%, rgb(54, 124, 202) 34%, #9CC8EB 88%, #9cc8eb00 100%);
+    background: -webkit-linear-gradient(rgb(54, 124, 202, 0%) 0%, rgb(54, 124, 202) 34%, #9CC8EB 88%, #9cc8eb00 100%);
+    background: -moz-linear-gradient(rgb(54, 124, 202, 0%) 0%, rgb(54, 124, 202) 34%, #9CC8EB 88%, #9cc8eb00 100%);
+    background: -o-linear-gradient(rgb(54, 124, 202, 0%) 0%, rgb(54, 124, 202) 34%, #9CC8EB 88%, #9cc8eb00 100%);
 }
 
 .careerRecord-titleDecoration {
