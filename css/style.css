@@ -413,7 +413,7 @@ p {
 
 .workExperience-arrow {
     margin: 40px auto 40px 0;
-    transform: rotateZ(-90deg);
+    transform: rotateZ(90deg);
 }
 
 .workExperience-list-mb {
