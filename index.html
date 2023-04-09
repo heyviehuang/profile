@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>個人簡介 by 黃暄晴</title>
-    <link rel="shortcut icon" href="img/logo.ico">
+    <link rel="shortcut icon" href="./img/logo.ico">
     <meta name='description' content='黃暄晴的個人簡介' />
     <meta property="og:title" content="個人簡介 by 黃暄晴" />
     <meta property="og:description" content="黃暄晴的個人簡介">
@@ -15,11 +15,15 @@
     <meta property="og:image" content="https://upload.cc/i1/2022/04/29/m16y9L.png" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&amp;display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/lightbox.css" />
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="./css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="./css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" type="text/css" />
+
+    <link rel="stylesheet" href="./css/lightbox.css" />
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -36,19 +40,19 @@
             </h1>
             <ul class="nav-menuList">
                 <li class="btn-navItem-container"><a class="btn-navItem-a scrollTop" href="#personalInformation">個人簡介</a></li>
-                <!-- <li class="btn-navItem-container"><a class="btn-navItem-a scrollTop" href="#gallery">作品展示</a></li> -->
+                <li class="btn-navItem-container"><a class="btn-navItem-a scrollTop" href="#gallery">作品展示</a></li>
                 <li class="btn-navItem-container"><a class="btn-navItem-a scrollTop" href="#careerRecord">生涯紀錄</a></li>
             </ul>
         </nav>
-        <img class="logo-main" src="img/logo.svg" alt="logo-main">
+        <img class="logo-main" src="./img/logo.svg" alt="logo-main">
     </header>
 
     <main>
         <section id="personalInformation" class="personalInformation">
             <ul>
-                <li class="personalInformation-item2-bg">
+                <li class="personalInformation-item1-bg">
                     <div class="education wrap">
-                        <img class="headShot animated-l" src="img/img-headShot.png" alt="頭像">
+                        <img class="headShot animated-l" src="./img/img-headShot.png" alt="頭像">
                         <div class="education-words">
                             <ul class="name animated-r">
                                 <li>
@@ -65,7 +69,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="personalInformation-item1-bg">
+                <li class="personalInformation-item2-bg">
                     <div class="workExperience wrap">
                         <h3 class="title animated-l">
                             <span class="stars material-icons md-40">auto_awesome</span>工作經歷<span class="stars material-icons md-40 starsSwitch">auto_awesome</span>
@@ -84,7 +88,7 @@
                                     <td>
                                     </td>
                                     <td>
-                                        <img class="workExperience-arrow" src="img/img-arrow.png" alt="arrow">
+                                        <img class="workExperience-arrow" src="./img/img-arrow.png" alt="arrow">
                                     </td>
                                 </tr>
                                 <tr class="animated-l">
@@ -99,7 +103,7 @@
                                     <td>
                                     </td>
                                     <td>
-                                        <img class="workExperience-arrow" src="img/img-arrow.png" alt="arrow">
+                                        <img class="workExperience-arrow" src="./img/img-arrow.png" alt="arrow">
                                     </td>
                                 </tr>
                                 <tr class="animated-l">
@@ -126,7 +130,7 @@
                                 </tr>
                                 <tr class="animated-l">
                                     <td>
-                                        <img class="workExperience-arrow" src="img/img-arrow.png" alt="arrow">
+                                        <img class="workExperience-arrow" src="./img/img-arrow.png" alt="arrow">
                                     </td>
                                 </tr>
                                 <tr class="animated-l">
@@ -141,7 +145,7 @@
                                 </tr>
                                 <tr class="animated-l">
                                     <td>
-                                        <img class="workExperience-arrow" src="img/img-arrow.png" alt="arrow">
+                                        <img class="workExperience-arrow" src="./img/img-arrow.png" alt="arrow">
                                     </td>
                                 </tr>
                                 <tr class="animated-l">
@@ -158,8 +162,307 @@
                         </table>
                     </div>
                 </li>
+                <li class="personalInformation-item1-bg">
+                    <div class="skill wrap">
+                        <h3 class="title animated-l">
+                            <span class="stars material-icons md-40">auto_awesome</span>專業技能<span class="stars material-icons md-40 starsSwitch">auto_awesome</span>
+                        </h3>
+                        <ul class="skill-list">
+                            <li class="animated-l">
+                                <h5>影像處理</h5>
+                                <h6>✦ Illustrator　✦ Photoshop　✦ Painter　✦ Clip Studio Paint　✦ Procreate</h6>
+                            </li>
+                            <li class="animated-l">
+                                <h5>程式設計</h5>
+                                <h6>✦ HTML　✦ CSS　✦Bootstrap　✦WordPress　✦ jQuery　✦ C#</h6>
+                            </li>
+                            <li class="animated-l">
+                                <h5>多媒體設計</h5>
+                                <h6>✦ Unity3D　✦ DragonBones　✦ 3ds Max　✦ Egret Engine</h6>
+                            </li>
+                            <li class="animated-l">
+                                <h5>專案溝通</h5>
+                                <h6>✦ Adobe XD　✦ Figma　✦ Zeplin　✦ Git　✦ GitHub</h6>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </section>
+        <div class="wrap">
+            <section id="gallery" class="gallery">
+                <ul>
+                    <li class="commerceWork">
+                        <h3 class="title animated-b">
+                            <span class="stars material-icons md-40">auto_awesome</span>商業作品
+                            <span class="stars material-icons md-40">auto_awesome</span>
+                        </h3>
+                        <div class="commerceWork-content animated-t">
+                            <p class="commerceWork-content-p">商業Banner，點擊圖片即可瀏覽大圖:</p>
+                            <div class="section-bg">
+                                <h3 class="title animated-b">
+                                    商業Banner設計
+                                </h3>
+                                <div class="row gutter-10 animated-m" data-lightbox="gallery">
+                                    <div class="col-md-6 anim-sparkle">
+                                        <div class="image-container">
+                                            <a href="././img/img-commerceWork01.jpg" data-lightbox="gallery-item">
+                                                <img class="gallery-img" src="././img/img-commerceWork01.jpg" alt="">
+                                            </a>
+                                            <!-- <div class="title-container">
+                                                <h3>Your Title</h3>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 anim-sparkle">
+                                        <div class="image-container">
+                                            <a href="././img/img-commerceWork02.jpg" data-lightbox="gallery-item">
+                                                <img class="gallery-img" src="././img/img-commerceWork02.jpg" alt="">
+                                            </a>
+                                            <!-- <div class="title-container">
+                                                <h3>Your Title</h3>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 anim-sparkle">
+                                        <div class="image-container">
+                                            <a href="././img/img-commerceWork03.jpg" data-lightbox="gallery-item">
+                                                <img class="gallery-img" src="././img/img-commerceWork03.jpg" alt="">
+                                            </a>
+                                            <!-- <div class="title-container">
+                                                <h3>Your Title</h3>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 anim-sparkle">
+                                        <div class="image-container">
+                                            <a href="././img/img-commerceWork04.jpg" data-lightbox="gallery-item">
+                                                <img class="gallery-img" src="././img/img-commerceWork04.jpg" alt="">
+                                            </a>
+                                            <!-- <div class="title-container">
+                                                <h3>Your Title</h3>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 anim-sparkle">
+                                        <div class="image-container">
+                                            <a href="././img/img-commerceWork05.jpg" data-lightbox="gallery-item">
+                                                <img class="gallery-img" src="././img/img-commerceWork05.jpg" alt="">
+                                            </a>
+                                            <!-- <div class="title-container">
+                                                <h3>Your Title</h3>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 anim-sparkle">
+                                        <div class="image-container">
+                                            <a href="././img/img-commerceWork06.jpg" data-lightbox="gallery-item">
+                                                <img class="gallery-img" src="././img/img-commerceWork06.jpg" alt="">
+                                            </a>
+                                            <!-- <div class="title-container">
+                                                <h3>Your Title</h3>
+                                            </div>  -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 anim-sparkle">
+                                        <div class="image-container">
+                                            <a href="././img/img-commerceWork07.jpg" data-lightbox="gallery-item">
+                                                <img class="gallery-img" src="././img/img-commerceWork07.jpg" alt="">
+                                            </a>
+                                            <!-- <div class="title-container">
+                                                <h3>Your Title</h3>
+                                            </div>  -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="title animated-b">
+                                    社群推廣設計
+                                </h3>
+                                <div class="row gutter-10 animated-m" data-lightbox="gallery">
+                                    <div class="col-md-4 anim-sparkle">
+                                        <div class="image-container">
+                                            <a href="././img/img-commerceWork08.jpg" data-lightbox="gallery-item">
+                                                <img class="gallery-img" src="././img/img-commerceWork08.jpg" alt="">
+                                            </a>
+                                            <!-- <div class="title-container">
+                                                <h3>Your Title</h3>
+                                            </div>  -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 anim-sparkle">
+                                        <div class="image-container">
+                                            <a href="././img/img-commerceWork09.jpg" data-lightbox="gallery-item">
+                                                <img class="gallery-img" src="././img/img-commerceWork09.jpg" alt="">
+                                            </a>
+                                            <!-- <div class="title-container">
+                                                <h3>Your Title</h3>
+                                            </div>  -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 anim-sparkle">
+                                        <div class="image-container">
+                                            <a href="././img/img-commerceWork10.jpg" data-lightbox="gallery-item">
+                                                <img class="gallery-img" src="././img/img-commerceWork10.jpg" alt="">
+                                            </a>
+                                            <!-- <div class="title-container">
+                                                <h3>Your Title</h3>
+                                            </div>  -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="webDesign">
+                        <h3 class="title animated-b">
+                            <span class="stars material-icons md-40">auto_awesome</span>網頁作品
+                            <span class="stars material-icons md-40">auto_awesome</span>
+                        </h3>
+                        <div class="webDesign-content animated-t">
+                            <p class="paintingWork-content-p">此四件作品皆為原創設計，非有實體營運；
+                                <br/> -《檸夏果汁》與《敖翔飯店》皆為沒有使用套版的網站，純手刻HTML與CSS；
+                                <br/> -《晴空雜貨店》以WordPress系統架設，伺服器部屬在GCP，採用Cloudflare提供的免費憑證；
+                                <br/> -《魔娜售票 • 設計稿》為 Adobe XD 平台開發的設計稿；
+                                <br/>點擊以下按鈕即可瀏覽網頁:
+                            </p>
+                            <div class="row row-cols-2 row-cols-lg-4 col-mb-30">
+                                <div class="col text-center animated-l">
+                                    <a class="webDesign-list-a anim-sparkle" href="https://heyviehuang.github.io/ningxia/" target="_blank">
+                                        <img class="img-fluid mb-2 rounded" src="./img/img-webDesign-list-btn01.png" alt="Image">
+                                    </a>
+                                    <h5 class="mb-0 mt-3">《檸夏果汁》</h5>
+                                    <p class="webDesign-content-p mb-0">果汁網站，採明亮的水果色調，以冷飲的氣泡、柳橙與雞蛋花等做裝飾，讓夏天沁涼的果汁帶來暢快。</p>
+                                </div>
+                                <div class="col text-center mt-lg-5 animated-b">
+                                    <a class="webDesign-list-a anim-sparkle" href="https://heyviehuang.github.io/flyHotel/" target="_blank">
+                                        <img class="img-fluid mb-2 rounded" src="./img/img-webDesign-list-btn02.png" alt="Image">
+                                    </a>
+                                    <h5 class="mb-0 mt-3">《敖翔飯店》</h5>
+                                    <p class="webDesign-content-p mb-0">飯店網站，走低調奢華的高級飯店路線，以黑色底金色邊為主視覺，設計的是一趟精緻的旅程。</p>
+                                </div>
+                                <div class="col text-center animated-t">
+                                    <a class="webDesign-list-a anim-sparkle" href="https://clearskytuckshop.com/" target="_blank">
+                                        <img class="img-fluid mb-2 rounded" src="./img/img-webDesign-list-btn03.png" alt="Image">
+                                    </a>
+                                    <h5 class="mb-0 mt-3">《晴空雜貨店》</h5>
+                                    <p class="webDesign-content-p mb-0">電商平台，主視覺以清新風格的水彩速寫，營造"在晴空萬里中的復古柑仔店"。</p>
+                                </div>
+                                <div class="col text-center mt-lg-5 animated-r">
+                                    <a class="webDesign-list-a anim-sparkle" href="https://xd.adobe.com/view/3af5096b-9a31-41a7-b79b-11af403d3e23-6fa6/" target="_blank">
+                                        <img class="img-fluid mb-2 rounded" src="./img/img-webDesign-list-btn02.png" alt="Image">
+                                    </a>
+                                    <h5 class="mb-0 mt-3">《魔娜售票》</h5>
+                                    <p class="webDesign-content-p mb-0">售票平台，風格以魔女為原型，充滿神祕氣息的紫色為主色系。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="paintingWork">
+                        <h3 class="title animated-b">
+                            <span class="stars material-icons md-40">auto_awesome</span>原畫作品
+                            <span class="stars material-icons md-40">auto_awesome</span>
+                        </h3>
+                        <div class="paintingWork-content animated-t">
+                            <p class="paintingWork-content-p">精選收錄十個原畫作品，繪圖軟體使用Painter、Clip Studio Paint與Procreate，點擊圖片即可瀏覽大圖:</p>
+                            <div class="section-bg">
+                                <h3 class="title animated-b">
+                                    電繪作品
+                                </h3>
+                                <div class="row gutter-10 animated-m" data-lightbox="gallery">
+                                    <div class="col-md-12 anim-sparkle">
+                                        <div class="image-container">
+                                            <a href="./img/img-paintingWork01.png" data-lightbox="gallery-item">
+                                                <img class="gallery-img" src="./img/img-paintingWork01.png" alt="">
+                                            </a>
+                                            <!-- <div class="title-container">
+                                                <h3>Your Title</h3>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 anim-sparkle">
+                                        <div class="image-container">
+                                            <a href="./img/img-paintingWork02.png" data-lightbox="gallery-item">
+                                                <img class="gallery-img" src="./img/img-paintingWork02.png" alt="">
+                                            </a>
+                                            <!-- <div class="title-container">
+                                                <h3>Your Title</h3>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 anim-sparkle">
+                                        <div class="image-container">
+                                            <a href="./img/img-paintingWork03.png" data-lightbox="gallery-item">
+                                                <img class="gallery-img" src="./img/img-paintingWork03.png" alt="">
+                                            </a>
+                                            <!-- <div class="title-container">
+                                                <h3>Your Title</h3>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 anim-sparkle">
+                                        <div class="image-container">
+                                            <a href="./img/img-paintingWork04.png" data-lightbox="gallery-item">
+                                                <img class="gallery-img" src="./img/img-paintingWork04.png" alt="">
+                                            </a>
+                                            <!-- <div class="title-container">
+                                                <h3>Your Title</h3>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="title animated-b">
+                                    手繪作品
+                                </h3>
+                                <div class="row gutter-10 animated-m" data-lightbox="gallery">
+                                    <div class="col-md-6 anim-sparkle">
+                                        <div class="image-container">
+                                            <a href="./img/img-paintingWork01.png" data-lightbox="gallery-item">
+                                                <img class="gallery-img" src="./img/img-paintingWork01.png" alt="">
+                                            </a>
+                                            <!-- <div class="title-container">
+                                                <h3>Your Title</h3>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 anim-sparkle">
+                                        <div class="image-container">
+                                            <a href="./img/img-paintingWork02.png" data-lightbox="gallery-item">
+                                                <img class="gallery-img" src="./img/img-paintingWork02.png" alt="">
+                                            </a>
+                                            <!-- <div class="title-container">
+                                                <h3>Your Title</h3>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gameWorkByUnity">
+                        <h3 class="title animated-b">
+                            <span class="stars material-icons md-40">auto_awesome</span>Unity 遊戲作品
+                            <span class="stars material-icons md-40">auto_awesome</span>
+                        </h3>
+                        <ul class="gameWorkByUnity-content animated-t">
+                            <li class="natsuMatsuri">
+                                <p class="natsuMatsuri-p">《夏日祭》是結合兩款經典網頁遊戲《夏の縁日》玩法與《忍豆風雲》風格的二創祭典小遊戲，由五個日本祭典常見的小攤位組成:打靶、撈金魚、面具、章魚燒與套圈圈，從空曠的草地到煙火絢爛的熱鬧祭典，讓玩家就算沒有去日本也能透過《夏日祭》體驗日本的祭典文化氛圍；<br>本遊戲使用Unity遊戲引擎為開發平台，C#為程式語言:</p>
+                                <div class="embed-container embedvideo">
+                                    <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube-nocookie.com/embed/vbu8PBo-8Uw?rel=0" width="560"></iframe>
+                                </div>
+                            </li>
+                            <li class="windFantasy">
+                                <p class="windFantasy-p">《風色幻想Online》是由《弘煜科技》所製作的大型多人線上角色扮演遊戲，於2009年上線，奇幻的北歐故事背景與日系原畫風格，深深打動人心，遺憾的是在2014年結束營運，所以此款《風色幻想Online》重製便就此誕生，非營利，只為回憶；<br>本遊戲使用Unity遊戲引擎為開發平台，Photon Cloud為伺服器處理角色的動作同步，並同時接上Photon Chat讓多名玩家可以在同一個遊戲場景中做文字訊息交流:</p>
+                                <div class="embed-container embedvideo">
+                                    <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube-nocookie.com/embed/bqvN-oHkwJs?rel=0" width="560"></iframe>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
 
 
         <section id="careerRecord" class="careerRecord">
@@ -231,10 +534,10 @@
                     <div class="careerRecord-item-contentBg">
                         <ul class="siteLink-list animated-t">
                             <li class="animated-l">
-                                <a class="siteLink-list-a anim-sparkle" href="https://github.com/heyviehuang" target="_blank"><img src="img/img-btn-github.png" alt="GitHub連結"></a>
+                                <a class="siteLink-list-a anim-sparkle" href="https://github.com/heyviehuang" target="_blank"><img src="./img/img-btn-github.png" alt="GitHub連結"></a>
                             </li>
                             <li class="animated-r">
-                                <a class="siteLink-list-a anim-sparkle" href="https://upload.cc/i1/2022/05/03/OWG7Zm.png" target="_blank"><img src="img/img-btn-score.png" alt="在校成績"></a>
+                                <a class="siteLink-list-a anim-sparkle" href="https://upload.cc/i1/2022/05/03/OWG7Zm.png" target="_blank"><img src="./img/img-btn-score.png" alt="在校成績"></a>
                             </li>
                         </ul>
                         <div class="careerRecord-frameDecoration"></div>
@@ -245,7 +548,7 @@
     </main>
     <footer class="footer">
         <h2>
-            <img class="footerLogo" src="img/logo.svg" alt="footerLogo">
+            <img class="footerLogo" src="./img/logo.svg" alt="footerLogo">
         </h2>
         <p class="copyRight">
             Copyright © 2022 heyviehuang.All rights reserved.
@@ -257,12 +560,18 @@
     </button>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/lightbox.js"></script>
-    <script src="js/jquery.let_it_snow.js"></script>
-    <script src="js/jquery-canvas-sparkles.js"></script>
-    <script src="js/all.js"></script>
+    <script src="./js/lightbox.js"></script>
+    <script src="./js/jquery.let_it_snow.js"></script>
+    <script src="./js/jquery-canvas-sparkles.js"></script>
+    <script src="./js/all.js"></script>
+    <!-- Footer Scripts
+	============================================= -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
