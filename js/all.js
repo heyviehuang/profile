@@ -15,14 +15,14 @@ $(document).ready(function() {
         speed: 0.001,
         count: 20,
         size: 3,
-        image: "../img/img-bgItem-snow.png"
+        image: "img/img-bgItem-snow.png"
     });
     $("canvas.flake").let_it_snow({
         windPower: 2,
         speed: 0.5,
         count: 2,
         size: 10,
-        image: "../img/img-bgItem-snow.png"
+        image: "img/img-bgItem-snow.png"
     });
 
     $(".anim-sparkle").sparkle({
@@ -50,45 +50,6 @@ $(document).ready(function() {
         }
     }
     $(window).scroll(showBtnCondition);
-
-
-    var mm = window.matchMedia("(max-width: 415px)");
-    mm.addListener(resizeWidth);
-    resizeWidth(mm);
-
-    function resizeWidth(pMatchMedia) {
-        if (pMatchMedia.matches) {
-            var swiper = new Swiper(".modelingWorkBy3dsMax-swiper", {
-                slidesPerView: 1,
-                spaceBetween: 8,
-                slidesPerGroup: 1,
-                loop: true,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-            });
-        } else {
-            var swiper = new Swiper(".modelingWorkBy3dsMax-swiper", {
-                slidesPerView: 3,
-                spaceBetween: 16,
-                slidesPerGroup: 1,
-                loop: true,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-            });
-        }
-    }
 
     $(window).scroll(function() {
         var scrollPos = $(window).scrollTop();
