@@ -454,7 +454,7 @@ p {
 
 .title {
     display: flex;
-    margin-bottom: 32px;
+    margin: 32px 0;
     padding: 16px 0;
     font-family: 'Noto Serif TC', serif;
 }
