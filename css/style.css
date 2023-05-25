@@ -393,6 +393,7 @@ h4 {
     color: #ffffff;
     font-size: 32px;
     font-weight: bold;
+    margin-top: 8px;
 }
 
 h5 {
@@ -454,7 +455,7 @@ p {
 
 .title {
     display: flex;
-    margin: 32px 0;
+    margin-bottom: 32px;
     padding: 16px 0;
     font-family: 'Noto Serif TC', serif;
 }
