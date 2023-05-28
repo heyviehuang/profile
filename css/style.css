@@ -310,6 +310,10 @@ button {
     -webkit-filter: drop-shadow(0 1px 6px #ffffff);
 }
 
+.webDesign-list-a img {
+    margin: 0 auto;
+}
+
 @media (max-width:768px) {
     .wrap {
         padding: 0 8px;
