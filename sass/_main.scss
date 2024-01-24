@@ -1,0 +1,153 @@
+  /* common spacing */
+  
+  .personalInformation,
+  .gallery,
+  .careerRecord {
+      margin-bottom: 5rem;
+  }
+  
+  .education,
+  .workExperience,
+  .skill,
+  .webDesign,
+  .commerceWork,
+  .paintingWork,
+  .gameWorkByUnity,
+  .modelingWorkBy3dsMax,
+  .license,
+  .studyExperience,
+  .siteLink {
+      padding: 2rem 0;
+  }
+  
+  body {
+      @include custom-scrollbar($sapphire, $cornflower-blue, 6px);
+  }
+  
+  .embed-container {
+      @include embed-container();
+  }
+  
+  .logo {
+      @include hide-text;
+  }
+  
+  .logoMain {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 476px;
+  }
+  /* dynamic background */
+  
+  .dynamicBackground-container {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+      background: linear-gradient(#8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
+      background: -webkit-linear-gradient(#8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
+      background: -moz-linear-gradient(#8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
+      background: -o-linear-gradient(#8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
+  }
+  
+  .cloudL,
+  .cloudR {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 1898px;
+      height: 601px;
+      background: url("../img/img-bgItem-cloud.png") repeat-x;
+      background-size: cover;
+      animation-duration: 200s;
+      animation-iteration-count: infinite;
+      transition: 0.1s;
+  }
+  
+  .cloudL {
+      left: 0;
+      animation-name: cloudAnimL;
+  }
+  
+  .cloudR {
+      left: 130%;
+      animation-name: cloudAnimR;
+  }
+  
+  @keyframes cloudAnimL {
+      0% {
+          opacity: 0.9;
+          transform: translateX(-70%);
+      }
+      50% {
+          opacity: 0.7;
+          transform: translateX(-50%);
+      }
+      100% {
+          opacity: 0.9;
+          transform: translateX(-70%);
+      }
+  }
+  
+  @keyframes cloudAnimR {
+      0% {
+          opacity: 0.9;
+          transform: translateX(-60%);
+      }
+      50% {
+          opacity: 0.7;
+          transform: translateX(-40%);
+      }
+      100% {
+          opacity: 0.9;
+          transform: translateX(-60%);
+      }
+  }
+  
+  .dynamicBg {
+      display: block;
+      top: 0;
+      left: 0;
+      position: fixed;
+  }
+  
+  .education {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  // 網頁列表
+  .listWEB {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      &>li {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          div {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              width: 50%;
+          }
+      }
+      &>li:nth-child(even) {
+          display: flex;
+          flex-direction: row-reverse;
+          & p {
+              color: red !important;
+          }
+      }
+  }
+  
+  .infiniteslide {
+      img {
+          width: 200px;
+      }
+  }

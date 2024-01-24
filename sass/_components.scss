@@ -1,0 +1,67 @@
+//元件
+//Top按鈕
+.btnTop {
+    position: fixed;
+    right: 1.5%;
+    bottom: 1.5%;
+    z-index: 9;
+    background-color: $cerulean;
+    transition: .3s;
+    &:hover {
+        transform: translateY(-5px);
+        background-color: $sapphire;
+    }
+}
+
+// 按鈕
+// 輪播
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+// 下拉選單
+// 瀑布流
+.grid-item {
+    width: 320px;
+}
+
+//淡入淡出動畫
+.animT,
+.animR,
+.animB,
+.animL,
+.animM {
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.animT {
+    transform: translateY(50px);
+}
+
+.animR {
+    transform: translateX(50px);
+}
+
+.animB {
+    transform: translateY(-50px);
+}
+
+.animL {
+    transform: translateX(-50px);
+}
+
+.animM {
+    opacity: 1;
+    transform: translateX(0);
+    transform: translateY(0);
+}

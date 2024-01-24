@@ -1,0 +1,72 @@
+//容器
+//container
+.wrap {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1320px;
+    @media (max-width: 1140px) {
+        max-width: map-get($container-max-widths, xl);
+    }
+    @media (max-width:960px) {
+        max-width: map-get($container-max-widths, lg);
+    }
+    @media (max-width: 720px) {
+        max-width: map-get($container-max-widths, md);
+    }
+    @media (max-width: 540px) {
+        max-width: map-get($container-max-widths, sm);
+    }
+}
+
+//header
+header {
+    height: 100vh;
+}
+
+//nav
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 0 2rem;
+    background-color: $navy-blue;
+}
+
+.nav__a--logo {
+    @include hide-text;
+    width: 70.16px;
+    height: 78px;
+    background: url("../img/logo.svg") no-repeat center;
+}
+
+.nav__menuList {
+    display: flex;
+    a {
+        padding: 1.5rem 2rem;
+        color: #ffffff;
+        font-size: 1.25rem;
+        text-align: center;
+        white-space: nowrap;
+    }
+}
+
+//footer
+.footer {
+    padding: 4rem 0;
+    background-color: $navy-blue;
+}
+
+.footerLogo {
+    width: 80px;
+    margin: 0 auto;
+}
+
+.copyRight {
+    text-align: center;
+    color: #fff;
+}

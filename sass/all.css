@@ -1,0 +1,529 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poiret+One&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* common font */
+h1 {
+  font-size: 2.5rem;
+  font-family: "Poiret One", sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Poiret One", sans-serif;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-family: "Poiret One", sans-serif;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-family: "Poiret One", sans-serif;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-family: "Poiret One", sans-serif;
+}
+
+h6 {
+  font-size: 1rem;
+  font-family: "Poiret One", sans-serif;
+}
+
+p {
+  color: #001F3F;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  /* outline: 1px red solid; */
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif, Arial, Helvetica;
+  text-align: center;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  transition: all 0.6s;
+}
+
+button {
+  display: block;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.btnTop {
+  position: fixed;
+  right: 1.5%;
+  bottom: 1.5%;
+  z-index: 9;
+  background-color: #007BA7;
+  transition: 0.3s;
+}
+.btnTop:hover {
+  transform: translateY(-5px);
+  background-color: #0d3868;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.grid-item {
+  width: 320px;
+}
+
+.animT,
+.animR,
+.animB,
+.animL,
+.animM {
+  opacity: 0;
+  transition: all 1.5s;
+}
+
+.animT {
+  transform: translateY(50px);
+}
+
+.animR {
+  transform: translateX(50px);
+}
+
+.animB {
+  transform: translateY(-50px);
+}
+
+.animL {
+  transform: translateX(-50px);
+}
+
+.animM {
+  opacity: 1;
+  transform: translateX(0);
+  transform: translateY(0);
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1320px;
+}
+@media (max-width: 1140px) {
+  .wrap {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 960px) {
+  .wrap {
+    max-width: 960px;
+  }
+}
+@media (max-width: 720px) {
+  .wrap {
+    max-width: 720px;
+  }
+}
+@media (max-width: 540px) {
+  .wrap {
+    max-width: 540px;
+  }
+}
+
+header {
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 0 2rem;
+  background-color: #001F3F;
+}
+
+.nav__a--logo {
+  overflow: hidden;
+  width: 70.16px;
+  height: 78px;
+  background: url("../img/logo.svg") no-repeat center;
+  text-indent: 101%;
+  white-space: nowrap;
+  width: 70.16px;
+  height: 78px;
+  background: url("../img/logo.svg") no-repeat center;
+}
+
+.nav__menuList {
+  display: flex;
+}
+.nav__menuList a {
+  padding: 1.5rem 2rem;
+  color: #ffffff;
+  font-size: 1.25rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.footer {
+  padding: 4rem 0;
+  background-color: #001F3F;
+}
+
+.footerLogo {
+  width: 80px;
+  margin: 0 auto;
+}
+
+.copyRight {
+  text-align: center;
+  color: #fff;
+}
+
+/* common spacing */
+.personalInformation,
+.gallery,
+.careerRecord {
+  margin-bottom: 5rem;
+}
+
+.education,
+.workExperience,
+.skill,
+.webDesign,
+.commerceWork,
+.paintingWork,
+.gameWorkByUnity,
+.modelingWorkBy3dsMax,
+.license,
+.studyExperience,
+.siteLink {
+  padding: 2rem 0;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #367cca;
+  background-color: #0d3868;
+}
+body::-webkit-scrollbar {
+  width: 6px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #367cca;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  overflow: hidden;
+  width: 70.16px;
+  height: 78px;
+  background: url("../img/logo.svg") no-repeat center;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+.logoMain {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 476px;
+}
+
+/* dynamic background */
+.dynamicBackground-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  background: linear-gradient(#8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
+  background: -o-linear-gradient(#8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
+}
+
+.cloudL,
+.cloudR {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 1898px;
+  height: 601px;
+  background: url("../img/img-bgItem-cloud.png") repeat-x;
+  background-size: cover;
+  animation-duration: 200s;
+  animation-iteration-count: infinite;
+  transition: 0.1s;
+}
+
+.cloudL {
+  left: 0;
+  animation-name: cloudAnimL;
+}
+
+.cloudR {
+  left: 130%;
+  animation-name: cloudAnimR;
+}
+
+@keyframes cloudAnimL {
+  0% {
+    opacity: 0.9;
+    transform: translateX(-70%);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translateX(-70%);
+  }
+}
+@keyframes cloudAnimR {
+  0% {
+    opacity: 0.9;
+    transform: translateX(-60%);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateX(-40%);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translateX(-60%);
+  }
+}
+.dynamicBg {
+  display: block;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.education {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listWEB {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.listWEB > li {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.listWEB > li div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.listWEB > li:nth-child(even) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.listWEB > li:nth-child(even) p {
+  color: red !important;
+}
+
+.infiniteslide img {
+  width: 200px;
+}/*# sourceMappingURL=all.css.map */

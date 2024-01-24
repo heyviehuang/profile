@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>作品集 by 黃暄晴</title>
+    <title></title>
     <link rel="shortcut icon" href="./img/logo.ico">
     <meta name='description' content='黃暄晴的作品集' />
     <meta property="og:title" content="作品集 by 黃暄晴" />
@@ -21,7 +21,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/magnific-popup.css" type="text/css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" type="text/css" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./sass/all.css">
 </head>
 
 <body>
@@ -32,187 +34,117 @@
         <canvas class="snow dynamicBg" width="100%" height="100%"></canvas>
         <canvas class="flake dynamicBg" width="100%" height="100%"></canvas>
     </div>
-    <header class="header">
-        <nav class="navBar">
+
+    <!-- 導覽列 -->
+    <header>
+        <nav>
             <h1>
-                <a class="logo scrollTop" href="body">作品集 by 黃暄晴</a>
+                <a class="nav__a--logo" href="body">作品集 by 黃暄晴</a>
             </h1>
-            <ul class="nav-menuList">
-                <li class="btn-navItem-container"><a class="btn-navItem-a scrollTop" href="#personalInformation">個人簡介</a></li>
-                <li class="btn-navItem-container"><a class="btn-navItem-a scrollTop" href="#gallery">作品展示</a></li>
-                <li class="btn-navItem-container"><a class="btn-navItem-a scrollTop" href="#careerRecord">生涯紀錄</a></li>
+            <ul class="nav__menuList">
+                <li><a href="#personalInformation">個人簡介</a></li>
+                <li><a href="#gallery">作品展示</a></li>
+                <li><a href="#careerRecord">生涯紀錄</a></li>
             </ul>
         </nav>
-        <img class="logo-main" src="./img/logo.svg" alt="logo-main">
+        <img class="logoMain" src="./img/logo.svg" alt="logoMain">
     </header>
 
-    <main>
+    <main class="home-snap-section">
         <!-- 個人簡介 -->
-        <section id="personalInformation" class="personalInformation">
+        <section id="personalInformation" class="personalInformation message">
             <!-- 基本資料 -->
-            <div class="personalInformation-item1-bg">
-                <div class="education wrap">
-                    <img class="headShot animated-l" src="./img/img-headShot.png" alt="頭像">
-                    <div class="education-words">
-                        <ul class="name animated-r">
-                            <li>
-                                <h2>黃暄晴</h2>
-                            </li>
-                            <li>
-                                <h5>Sally Huang</h5>
-                            </li>
-                        </ul>
-                        <h3 class="title animated-r">
-                            <span class="stars material-icons md-40">auto_awesome</span>學歷<span class="stars material-icons md-40 starsSwitch">auto_awesome</span>
-                        </h3>
-                        <h5 class="animated-r">2018/09~2019/06 (1年)<br>私立佛光大學 | 資訊應用學系 碩士畢業</h5>
-                    </div>
+            <div class="education wrap">
+                <img class="headShot" src="./img/img-headShot.png" alt="頭像">
+                <div class="wordsContainer">
+                    <h2>名</h2>
+                    <h5>英文名</h5>
+                    <h3 class="">學</h3>
+                    <h5 class="">2018/09~2019/06 (1年)<br>私立佛光大學 | 資訊應用學系 碩士畢業</h5>
                 </div>
             </div>
             <!-- 工作經歷 -->
-            <div class="personalInformation-item2-bg">
-                <div class="workExperience wrap">
-                    <h3 class="title animated-l">
-                        <span class="stars material-icons md-40">auto_awesome</span>工作經歷<span class="stars material-icons md-40 starsSwitch">auto_awesome</span>
-                    </h3>
-                    <table class="workExperience-list-pc">
-                        <tbody>
-                            <tr class="animated-l">
-                                <td>
-                                    <h6>2022-05~2023-02 (10個月)</h6>
-                                </td>
-                                <td>
-                                    <h5>智冠科技股份有限公司 | 平面/網頁設計師</h5>
-                                </td>
-                            </tr>
-                            <tr class="animated-l">
-                                <td>
-                                </td>
-                                <td>
-                                    <img class="workExperience-arrow" src="./img/img-arrow.png" alt="arrow">
-                                </td>
-                            </tr>
-                            <tr class="animated-l">
-                                <td>
-                                    <h6>2019-09~2021-10 (2年)</h6>
-                                </td>
-                                <td>
-                                    <h5>恆為科技有限公司 | 美術設計師</h5>
-                                </td>
-                            </tr>
-                            <tr class="animated-l">
-                                <td>
-                                </td>
-                                <td>
-                                    <img class="workExperience-arrow" src="./img/img-arrow.png" alt="arrow">
-                                </td>
-                            </tr>
-                            <tr class="animated-l">
-                                <td>
-                                    <h6>2017/07~2017/12 (6個月，實習)</h6>
-                                </td>
-                                <td>
-                                    <h5>財團法人資訊工業策進會 | 3D美術人員</h5>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="workExperience-list-mb animated-l">
-                        <tbody>
-                            <tr class="animated-l">
-                                <td>
-                                    <h6>2022-05~2023-02<br/>(8個月)</h6>
-                                </td>
-                            </tr>
-                            <tr class="animated-l">
-                                <td>
-                                    <h5>智冠科技股份有限公司<br/>平面/網頁設計師</h5>
-                                </td>
-                            </tr>
-                            <tr class="animated-l">
-                                <td>
-                                    <img class="workExperience-arrow" src="./img/img-arrow.png" alt="arrow">
-                                </td>
-                            </tr>
-                            <tr class="animated-l">
-                                <td>
-                                    <h6>2019-09~2021-10<br/>(2年)</h6>
-                                </td>
-                            </tr>
-                            <tr class="animated-l">
-                                <td>
-                                    <h5>恆為科技有限公司<br/>美術設計師</h5>
-                                </td>
-                            </tr>
-                            <tr class="animated-l">
-                                <td>
-                                    <img class="workExperience-arrow" src="./img/img-arrow.png" alt="arrow">
-                                </td>
-                            </tr>
-                            <tr class="animated-l">
-                                <td>
-                                    <h6>2017/07~2017/12<br/>(6個月，實習)</h6>
-                                </td>
-                            </tr>
-                            <tr class="animated-l">
-                                <td>
-                                    <h5>財團法人資訊工業策進會<br/>3D美術人員</h5>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="workExperience wrap">
+                <h3 class="">工作經歷</h3>
+                <table class="list-pc">
+                    <tbody>
+                        <tr class="">
+                            <td>
+                                <h6>2022-05~2023-02 (10個月)</h6>
+                            </td>
+                            <td>
+                                <h5>智冠科技股份有限公司 | 平面/網頁設計師</h5>
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td>
+                                <img src="./img/img-arrow.png" alt="arrow">
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td>
+                                <h6>2019-09~2021-10 (2年)</h6>
+                            </td>
+                            <td>
+                                <h5>恆為科技有限公司 | 美術設計師</h5>
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td>
+                                <img src="./img/img-arrow.png" alt="arrow">
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td>
+                                <h6>2017/07~2017/12 (6個月，實習)</h6>
+                            </td>
+                            <td>
+                                <h5>財團法人資訊工業策進會 | 3D美術人員</h5>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <!-- 專業技能 -->
-            <div class="personalInformation-item1-bg">
-                <div class="skill wrap">
-                    <h3 class="title animated-l">
-                        <span class="stars material-icons md-40">auto_awesome</span>專業技能<span class="stars material-icons md-40 starsSwitch">auto_awesome</span>
-                    </h3>
-                    <ul class="skill-list">
-                        <li class="animated-l">
-                            <h5>影像處理</h5>
-                            <h6>✦ Photoshop　✦ Illustrator　✦ Painter　✦ Clip Studio Paint　✦ Procreate</h6>
-                        </li>
-                        <li class="animated-l">
-                            <h5>程式設計</h5>
-                            <h6>✦ HTML　✦ CSS　✦ jQuery　✦Bootstrap　✦WordPress　✦ C#</h6>
-                        </li>
-                        <li class="animated-l">
-                            <h5>多媒體設計</h5>
-                            <h6>✦ Unity3D　✦ DragonBones　✦ 3ds Max　✦ Egret Engine</h6>
-                        </li>
-                        <li class="animated-l">
-                            <h5>專案溝通</h5>
-                            <h6>✦ Adobe XD　✦ Figma　✦ GitHub　✦ Git</h6>
-                        </li>
-                    </ul>
-                </div>
+            <div class="skill wrap">
+                <h3 class="">專業技能</h3>
+                <ul class="list">
+                    <li class="">
+                        <h5>影像處理</h5>
+                        <h6>✦ Photoshop　✦ Illustrator　✦ Painter　✦ Clip Studio Paint　✦ Procreate</h6>
+                    </li>
+                    <li class="">
+                        <h5>程式設計</h5>
+                        <h6>✦ HTML　✦ CSS　✦ jQuery　✦Bootstrap　✦WordPress　✦ C#</h6>
+                    </li>
+                    <li class="">
+                        <h5>多媒體設計</h5>
+                        <h6>✦ Unity3D　✦ DragonBones　✦ 3ds Max　✦ Egret Engine</h6>
+                    </li>
+                    <li class="">
+                        <h5>專案溝通</h5>
+                        <h6>✦ Adobe XD　✦ Figma　✦ GitHub　✦ Git</h6>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <!-- 作品展示 -->
-        <section id="gallery" class="gallery">
+        <section id="gallery" class="gallery snap-container">
             <!-- 網頁作品列表 -->
             <div class="webDesign">
-                <h3 class="title animated-b">
-                    <span class="stars material-icons md-40">auto_awesome</span>網頁作品
-                    <span class="stars material-icons md-40">auto_awesome</span>
-                </h3>
-
-                <div class="container animated-t">
+                <h3 class="">Web Design</h3>
+                <div class="container">
                     <!-- 原創網頁作品 -->
-                    <h4 class="title animated-b">
-                        網頁原創設計
-                    </h4>
+                    <h4 class="">網頁原創設計</h4>
                     <p>此四件作品皆為原創設計，非有實體營運；
                         <br/> -《檸夏果汁》與《敖翔飯店》皆為沒有使用套版的網站，純手刻HTML與CSS；
                         <br/> -《晴空雜貨店》以WordPress系統架設，伺服器部屬在GCP，採用Cloudflare提供的免費憑證；
                         <br/> -《魔娜售票 • 設計稿》為 Adobe XD 平台開發的設計稿；
                         <br/>點擊以下按鈕即可瀏覽網頁:
                     </p>
-                    <ul class="webDesignOR-list warp">
-                        <li class="animated-l">
+                    <ul class="listWEB warp">
+                        <li class="">
                             <a class="anim-sparkle" href="https://heyviehuang.github.io/ningxia/" target="_blank">
                                 <img src="./img/img-webDesign-list-btn01.png" alt="Image">
                             </a>
@@ -221,7 +153,7 @@
                                 <p>果汁網站，採明亮的水果色調，以冷飲的氣泡、柳橙與雞蛋花等做裝飾，讓夏天沁涼的果汁帶來暢快。</p>
                             </div>
                         </li>
-                        <li class="animated-l">
+                        <li class="">
                             <a class="anim-sparkle" href="https://heyviehuang.github.io/ningxia/" target="_blank">
                                 <img src="./img/img-webDesign-list-btn01.png" alt="Image">
                             </a>
@@ -230,7 +162,7 @@
                                 <p>果汁網站，採明亮的水果色調，以冷飲的氣泡、柳橙與雞蛋花等做裝飾，讓夏天沁涼的果汁帶來暢快。</p>
                             </div>
                         </li>
-                        <li class="animated-l">
+                        <li class="">
                             <a class="anim-sparkle" href="https://heyviehuang.github.io/ningxia/" target="_blank">
                                 <img src="./img/img-webDesign-list-btn01.png" alt="Image">
                             </a>
@@ -239,7 +171,7 @@
                                 <p>果汁網站，採明亮的水果色調，以冷飲的氣泡、柳橙與雞蛋花等做裝飾，讓夏天沁涼的果汁帶來暢快。</p>
                             </div>
                         </li>
-                        <li class="animated-l">
+                        <li class="">
                             <a class="anim-sparkle" href="https://heyviehuang.github.io/ningxia/" target="_blank">
                                 <img src="./img/img-webDesign-list-btn01.png" alt="Image">
                             </a>
@@ -251,175 +183,124 @@
                     </ul>
 
 
-                    <!-- 智冠網頁作品 -->
-                    <h4 class="title animated-b">
-                        遊戲事前登錄活動網頁設計
-                    </h4>
-                    <p>
-                        此區收錄的遊戲事前登錄活動網頁皆為實際上線網頁，因不同檔期有不同的主視覺設計，網頁裡的遊戲頭像非本人製作，<br/>僅供還原當時作品使用，活動連結不會跳轉出去，表單不會送出，特此說明:
-                    </p>
-                    <ul class="webDesignSW-list">
-                        <li>
-                            <a href="https://heyviehuang.github.io/202301preregister/" target="_blank">
-                                <img src="./img/img-webDesign-list-btn12.png" alt="Image">
-                            </a>
-                            <h5>《過年搶頭香》</h5>
-                            <p>2023.01 以紅色與橘色呈現過年的視覺，<br>旁邊是MyCard吉祥物的手。</p>
-                        </li>
-                        <li>
-                            <a href="https://heyviehuang.github.io/202211preregister/" target="_blank">
-                                <img src="./img/img-webDesign-list-btn13.png" alt="Image">
-                            </a>
-                            <h5>《星空下許願》</h5>
-                            <p>2022.11 以流星動畫呈現星空下許願想要的獎品。</p>
-                        </li>
-                        <li>
-                            <a href="https://heyviehuang.github.io/202210preregister/" target="_blank">
-                                <img src="./img/img-webDesign-list-btn14.png" alt="Image">
-                            </a>
-                            <h5>《狂歡派對》</h5>
-                            <p>2022.10 以派對與閃光燈閃爍的視覺營造歡樂的氛圍。</p>
-                        </li>
-                    </ul>
+                    <!-- 實務經驗BTN -->
+                    <a href="">實務經驗<img src="" alt=""></a>
                 </div>
             </div>
-            <!-- BN作品跑馬燈 -->
-            <div class="commerceWork">
-                <h3 class="title animated-b">
-                    <span class="stars material-icons md-40">auto_awesome</span>平面作品
-                    <span class="stars material-icons md-40">auto_awesome</span>
-                </h3>
-                <div class="container animated-t">
-                    <p>點擊圖片即可瀏覽大圖:</p>
-                    <h4 class="animated-b">
-                        行銷Banner設計
-                    </h4>
-                    <ul>
-                        <li>
-                            <a href="./img/img-commerceWork01.jpg?v=20230528">
-                                <img src="./img/img-commerceWork01.jpg?v=20230528" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./img/img-commerceWork02.jpg?v=20230528">
-                                <img src="./img/img-commerceWork02.jpg?v=20230528" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./img/img-commerceWork03.jpg?v=20230528">
-                                <img src="./img/img-commerceWork03.jpg?v=20230528" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./img/img-commerceWork04.jpg?v=20230528">
-                                <img src="./img/img-commerceWork04.jpg?v=20230528" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./img/img-commerceWork05.jpg?v=20230528">
-                                <img src="./img/img-commerceWork05.jpg?v=20230528" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./img/img-commerceWork06.jpg?v=20230528">
-                                <img src="./img/img-commerceWork06.jpg?v=20230528" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./img/img-commerceWork07.jpg?v=202305282">
-                                <img src="./img/img-commerceWork07.jpg?v=202305282" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./img/img-commerceWork08.jpg?v=20230528">
-                                <img src="./img/img-commerceWork08.jpg?v=20230528" alt="">
-                            </a>
-                        </li>
-                    </ul>
+            <!-- 菜單跑馬燈 -->
+            <div class="menu">
+                <h3 class="">平面</h3>
+                <!-- 菜單01 -->
+                <!-- <ul class="infiniteslide" data-direction="right" data-clone="2">
+                    <li>
+                        <img src="./img/menu01.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/menu02.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/menu03.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/menu04.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/menu05.jpg" alt="">
+                    </li>
+                </ul> -->
+                <!-- 菜單02 -->
+                <!-- <ul class="infiniteslide" data-direction="left" data-clone="2">
+                    <li>
+                        <img src="./img/menu11.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/menu12.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/menu13.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/menu14.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/menu15.jpg" alt="">
+                    </li>
+                </ul> -->
+            </div>
+            <!-- BN平面瀑布流 -->
+            <div class="grid wrap">
+                <div class="grid-item col">
+                    <img src="./img/menu01.jpg" alt="">
+                </div>
+                <div class="grid-item  grid-item--height2 col">
+                    <img src="./img/menu02.jpg" alt="">
+                </div>
+                <div class="grid-item grid-item--height3 col">
+                    <img src="./img/banner01.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <img src="./img/menu04.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <img src="./img/banner01.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <img src="./img/menu12.jpg" alt="">
+                </div>
+                <div class="grid-item grid-item--height2">
+                    <img src="./img/menu13.jpg" alt="">
+                </div>
+                <div class="grid-item grid-item--height2">
+                    <img src="./img/menu14.jpg" alt="">
+                </div>
+                <div class="grid-item grid-item--height2">
+                    <img src="./img/banner02.jpg" alt="">
+                </div>
+                <div class="grid-item grid-item--height2">
+                    <img src="./img/banner01.jpg" alt="">
                 </div>
             </div>
             <!-- 繪畫作品輪播 -->
             <div class="paintingWork">
-                <h3 class="title animated-b">
-                    <span class="stars material-icons md-40">auto_awesome</span>電繪與手繪作品
-                    <span class="stars material-icons md-40">auto_awesome</span>
-                </h3>
-                <div class="container animated-t">
-                    <p class="paintingWork-content-p">-電腦繪圖軟體使用Painter、Clip Studio Paint與Procreate;<br/> -手繪使用不透明水彩為媒材;
-                        <br/>點擊圖片即可瀏覽大圖:
-                    </p>
-                    <ul>
-                        <li>
-                            <a href="./img/img-paintingWork01.png" data-lightbox="gallery-item">
-                                <img src="./img/img-paintingWork01.png" alt="">
-                                <h6>場景系列-森林鳥居</h6>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./img/img-paintingWork01.png" data-lightbox="gallery-item">
-                                <img src="./img/img-paintingWork01.png" alt="">
-                                <h6>場景系列-森林鳥居</h6>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./img/img-paintingWork01.png" data-lightbox="gallery-item">
-                                <img src="./img/img-paintingWork01.png" alt="">
-                                <h6>場景系列-森林鳥居</h6>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./img/img-paintingWork01.png" data-lightbox="gallery-item">
-                                <img src="./img/img-paintingWork01.png" alt="">
-                                <h6>場景系列-森林鳥居</h6>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./img/img-paintingWork01.png" data-lightbox="gallery-item">
-                                <img src="./img/img-paintingWork01.png" alt="">
-                                <h6>場景系列-森林鳥居</h6>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./img/img-paintingWork01.png" data-lightbox="gallery-item">
-                                <img src="./img/img-paintingWork01.png" alt="">
-                                <h6>場景系列-森林鳥居</h6>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./img/img-paintingWork01.png" data-lightbox="gallery-item">
-                                <img src="./img/img-paintingWork01.png" alt="">
-                                <h6>場景系列-森林鳥居</h6>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./img/img-paintingWork01.png" data-lightbox="gallery-item">
-                                <img src="./img/img-paintingWork01.png" alt="">
-                                <h6>場景系列-森林鳥居</h6>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./img/img-paintingWork01.png" data-lightbox="gallery-item">
-                                <img src="./img/img-paintingWork01.png" alt="">
-                                <h6>場景系列-森林鳥居</h6>
-                            </a>
-
-                        </li>
-                        <li>
-                            <a href="./img/img-paintingWork01.png" data-lightbox="gallery-item">
-                                <img src="./img/img-paintingWork01.png" alt="">
-
-                                <h6>場景系列-森林鳥居</h6>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/img-paintingWork01.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/img-paintingWork02.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/img-paintingWork03.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/img-paintingWork04.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/img-paintingWork05.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/img-paintingWork06.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/img-paintingWork07.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/img-paintingWork08.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/img-paintingWork09.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/img-paintingWork10.png" />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
             <!-- 遊戲作品Tab -->
             <div class="gameWorkByUnity">
-                <h3 class="title animated-b">
-                    <span class="stars material-icons md-40">auto_awesome</span>Unity 遊戲作品
-                    <span class="stars material-icons md-40">auto_awesome</span>
-                </h3>
+                <h3 class="">Unity 遊戲作品</h3>
                 <ul class="container">
                     <li class="natsuMatsuri">
                         <p class="natsuMatsuri-p">《夏日祭》是結合兩款經典網頁遊戲《夏の縁日》玩法與《忍豆風雲》風格的二創祭典小遊戲，由五個日本祭典常見的小攤位組成:打靶、撈金魚、面具、章魚燒與套圈圈，從空曠的草地到煙火絢爛的熱鬧祭典，讓玩家就算沒有去日本也能透過《夏日祭》體驗日本的祭典文化氛圍；<br>本遊戲使用Unity遊戲引擎為開發平台，C#為程式語言:</p>
@@ -441,82 +322,49 @@
         <section id="careerRecord" class="careerRecord">
             <!-- 專業證照-->
             <div class="license">
-                <h3 class="title careerRecord-titleDecoration animated-b">
-                    <span class="stars material-icons md-40">auto_awesome</span>專業證照
-                    <span class="stars material-icons md-40">auto_awesome</span>
-                </h3>
-                <div class="careerRecord-titleDecoration-line animated-t">
-                    <span class="titleDecoration-lineL"></span>
-                    <div class="titleDecoration-lineC"></div>
-                    <span class="titleDecoration-lineR"></span>
-                </div>
-                <div class="careerRecord-item-contentBg">
-                    <ul class="license-list">
-                        <li class="animated-l">✦ TQC 企業人才技能合格證書 － Dreamweaver CS6</li>
-                        <li class="animated-l">✦ TQC 企業人才技能合格證書 － Java JDK 1.4</li>
-                        <li class="animated-l">✦ 經濟部產業人才能力鑑定證書 － 初級行動裝置程式設計師 (Android)</li>
-                        <li class="animated-l">✦ 經濟部產業人才能力鑑定證書 － 初級行動遊戲程式設計師 (Android)</li>
-                        <li class="animated-l">✦ Silicon Stone Education - Designing 3D Animation Games Using Unity 國際認證</li>
-                        <li class="animated-l">✦ Silicon Stone Education - Designing 3D Animation Games Using 3D Studio Max 國際認證</li>
-                        <li class="animated-l">✦ Microsoft Technology Associate - Software Development Fundamentals (C#)</li>
-                    </ul>
-                    <div class="careerRecord-frameDecoration"></div>
-                </div>
+                <h3 class="">專業證照</h3>
+                <ul>
+                    <li class="">✦ TQC 企業人才技能合格證書 － Dreamweaver CS6</li>
+                    <li class="">✦ TQC 企業人才技能合格證書 － Java JDK 1.4</li>
+                    <li class="">✦ 經濟部產業人才能力鑑定證書 － 初級行動裝置程式設計師 (Android)</li>
+                    <li class="">✦ 經濟部產業人才能力鑑定證書 － 初級行動遊戲程式設計師 (Android)</li>
+                    <li class="">✦ Silicon Stone Education - Designing 3D Animation Games Using Unity 國際認證</li>
+                    <li class="">✦ Silicon Stone Education - Designing 3D Animation Games Using 3D Studio Max 國際認證</li>
+                    <li class="">✦ Microsoft Technology Associate - Software Development Fundamentals (C#)</li>
+                </ul>
             </div>
             <!-- 求學經歷 -->
             <div class="studyExperience">
-                <h3 class="title careerRecord-titleDecoration animated-b">
-                    <span class="stars material-icons md-40">auto_awesome</span>求學經歷
-                    <span class="stars material-icons md-40">auto_awesome</span>
-                </h3>
-                <div class="careerRecord-titleDecoration-line animated-t">
-                    <span class="titleDecoration-lineL"></span>
-                    <div class="titleDecoration-lineC"></div>
-                    <span class="titleDecoration-lineR"></span>
-                </div>
-                <div class="careerRecord-item-contentBg">
-                    <ul class="studyExperience-content">
-                        <li>
-                            <h6 class="studyExperience-list-title animated-b">2016</h6>
-                            <ul class="studyExperience-list-2016">
-                                <li class="animated-l">✦ 以影像深度資訊進行行為辨識與互動行為分析, 助理, 科技部專題研究計畫</li>
-                                <li class="animated-l">✦ 以擴增實境為方法之生態模擬研究, 研究生, 科技部大專學生研究計畫</li>
-                                <li class="animated-l">✦ 宜蘭地區文創觀光跨領域加值服務之技術開發與應用研究, 研究生, 科技部專題研究計畫</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h6 class="studyExperience-list-title animated-b">2017</h6>
-                            <ul class="studyExperience-list-2017">
-                                <li class="animated-l">✦ 宜蘭地區文創觀光跨領域加值服務之技術開發與應用研究, 研究生, 科技部專題研究計畫</li>
-                                <li class="animated-l">✦ DIGI + Talent跨域數位人才加速躍升計畫, 研習生, 資策會數位教育研究所實習</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div class="careerRecord-frameDecoration"></div>
-                </div>
+                <h3 class="">求學經歷</h3>
+                <ul>
+                    <li>
+                        <h6 class="">2016</h6>
+                        <ul>
+                            <li class="">✦ 以影像深度資訊進行行為辨識與互動行為分析, 助理, 科技部專題研究計畫</li>
+                            <li class="">✦ 以擴增實境為方法之生態模擬研究, 研究生, 科技部大專學生研究計畫</li>
+                            <li class="">✦ 宜蘭地區文創觀光跨領域加值服務之技術開發與應用研究, 研究生, 科技部專題研究計畫</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6 class="">2017</h6>
+                        <ul>
+                            <li class="">✦ 宜蘭地區文創觀光跨領域加值服務之技術開發與應用研究, 研究生, 科技部專題研究計畫</li>
+                            <li class="">✦ DIGI + Talent跨域數位人才加速躍升計畫, 研習生, 資策會數位教育研究所實習</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
             <!-- 附加連結 -->
             <div class="siteLink">
-                <h3 class="title careerRecord-titleDecoration animated-b">
-                    <span class="stars material-icons md-40">auto_awesome</span>附加連結
-                    <span class="stars material-icons md-40">auto_awesome</span>
-                </h3>
-                <div class="careerRecord-titleDecoration-line">
-                    <span class="titleDecoration-lineL"></span>
-                    <div class="titleDecoration-lineC"></div>
-                    <span class="titleDecoration-lineR"></span>
-                </div>
-                <div class="careerRecord-item-contentBg">
-                    <ul class="siteLink-list animated-t">
-                        <li class="animated-l">
-                            <a class="siteLink-list-a anim-sparkle" href="https://github.com/heyviehuang" target="_blank"><img src="./img/img-btn-github.png" alt="GitHub連結"></a>
-                        </li>
-                        <li class="animated-r">
-                            <a class="siteLink-list-a anim-sparkle" href="./img/OWG7Zm.jpg" target="_blank"><img src="./img/img-btn-score.png" alt="在校成績"></a>
-                        </li>
-                    </ul>
-                    <div class="careerRecord-frameDecoration"></div>
-                </div>
+                <h3 class="">附加連結</h3>
+                <ul class="">
+                    <li class="">
+                        <a class="anim-sparkle" href="https://github.com/heyviehuang" target="_blank"><img src="./img/img-btn-github.png" alt="GitHub連結"></a>
+                    </li>
+                    <li class="">
+                        <a class="anim-sparkle" href="./img/OWG7Zm.jpg" target="_blank"><img src="./img/img-btn-score.png" alt="在校成績"></a>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
@@ -532,20 +380,19 @@
     <button class="btnTop material-icons md-48" style="display: none;" type="button">
         expand_less
     </button>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="./js/jquery.let_it_snow.js"></script>
     <script src="./js/jquery-canvas-sparkles.js"></script>
-    <script src="./js/all.js"></script>
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-
     <script src="js/plugins.min.js"></script>
     <script src="js/functions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/infiniteslidev2/infiniteslidev2.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/all.js"></script>
 </body>
 
 </html>
