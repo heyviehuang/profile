@@ -34,7 +34,7 @@ nav {
     z-index: 10;
     width: 100%;
     padding: 0 2rem;
-    background-color: $navy-blue;
+    background-color: rgba($gemstone-blue, 0.4);
 }
 
 .nav__a--logo {
@@ -46,19 +46,42 @@ nav {
 
 .nav__menuList {
     display: flex;
-    a {
-        padding: 1.5rem 2rem;
-        color: #ffffff;
-        font-size: 1.25rem;
-        text-align: center;
-        white-space: nowrap;
+    .navItem__container {
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+.nav__a {
+    padding: 24px 32px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    white-space: nowrap;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.5);
+        transition: transform 0.6s;
+        transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 300%, 0);
+    }
+    .navItem__container:hover &::before,
+    &.active::before {
+        transform: scale3d(3.3, 3.3, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -160%, 0);
+    }
+    &.active::before {
+        transform: scale3d(3.3, 3.3, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 0, 0);
     }
 }
 
 //footer
 .footer {
     padding: 4rem 0;
-    background-color: $navy-blue;
+    background-color: rgba($gemstone-blue, 0.4);
 }
 
 .footerLogo {
@@ -69,4 +92,30 @@ nav {
 .copyRight {
     text-align: center;
     color: #fff;
+}
+
+.material-icons {
+    color: #fff;
+}
+
+.material-icons.md-40 {
+    font-size: 40px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+.btnTop {
+    position: fixed;
+    right: 1.5%;
+    bottom: 1.5%;
+    z-index: 9;
+    background-color: $cerulean;
+    transition: .3s;
+}
+
+.btnTop:hover {
+    transform: translateY(-5px);
+    background-color: $sapphire;
 }

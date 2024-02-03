@@ -17,7 +17,7 @@
   .license,
   .studyExperience,
   .siteLink {
-      padding: 2rem 0;
+      padding: 4rem 0;
   }
   
   body {
@@ -33,24 +33,37 @@
   }
   
   .logoMain {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      //   position: absolute;
+      //   top: 50%;
+      //   left: 50%;
+      //   transform: translate(-50%, -50%);
       width: 476px;
+      margin: 0 auto;
+  }
+  
+  .sectionTitle {
+      font-size: 10rem;
+      font-weight: 700;
+  }
+  
+  .vertical-lr {
+      writing-mode: vertical-lr;
+      text-orientation: upright;
+      white-space: nowrap;
   }
   /* dynamic background */
   
-  .dynamicBackground-container {
+  .dynamicBG-container {
       position: fixed;
       width: 100%;
       height: 100%;
       overflow: hidden;
       z-index: -1;
       background: linear-gradient(#8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
-      background: -webkit-linear-gradient(#8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
-      background: -moz-linear-gradient(#8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
-      background: -o-linear-gradient(#8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
+      background: -webkitar-gradient(#8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
+      background: -mozar-gradient(#8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
+      background: -oar-gradient(#8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
+      transition: filter 0.3s ease-in-out;
   }
   
   .cloudL,
@@ -114,6 +127,21 @@
       position: fixed;
   }
   
+  .blur {
+      filter: blur(10px);
+      /* 初始模糊程度 */
+      transition: filter 0.3s;
+      /* 平滑過渡效果 */
+  }
+  
+  .logoMain {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+  }
+  
   .education {
       display: flex;
       justify-content: space-evenly;
@@ -132,34 +160,197 @@
       }
   }
   
+  .webDesign {
+      .sectionTitle {
+          color: $cornflower-blue;
+      }
+  }
+  
+  .gallery {
+      background: linear-gradient(0deg, transparent 0%, $light-blue 5%, #f7f3eb 100%, transparent);
+  }
+  
   // 網頁列表
   .listWEB {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-evenly;
       flex-wrap: wrap;
       &>li {
           display: flex;
           flex-direction: row;
-          width: 100%;
+          width: 80%;
+          margin: 2rem auto;
           div {
               display: flex;
               flex-direction: column;
               justify-content: center;
-              width: 50%;
+              width: 30%;
+              margin-left: 2rem;
           }
       }
       &>li:nth-child(even) {
           display: flex;
           flex-direction: row-reverse;
           & p {
-              color: red !important;
+              margin-right: 2rem;
           }
       }
   }
   
   .infiniteslide {
+      li {
+          margin: 0 1rem;
+      }
+      li:nth-child(even) {
+          padding-bottom: 10rem;
+      }
       img {
-          width: 200px;
+          max-width: 650px;
+          max-height: 650px;
+          border-radius: 8px;
+      }
+  }
+  
+  .menu {
+      position: relative;
+      .sectionTitle {
+          position: absolute;
+          bottom: -1rem;
+          left: 20%;
+          z-index: 2;
+          color: $steel-blue;
+      }
+  }
+  
+  .paintingWork {
+      display: flex;
+      overflow: hidden;
+      h3 {
+          font-size: 6rem;
+      }
+      img {
+          height: 100%;
+      }
+  }
+  
+  .drTitle {
+      display: block;
+      width: 20%;
+      overflow: hidden;
+  }
+  
+  .swiperContainer {
+      display: flex;
+      width: 80%;
+      img {
+          border-radius: 8px;
+      }
+  }
+  
+  .gameWorkByUnity {
+      .sectionTitle {
+          font-size: 6rem;
+          color: #fff;
+      }
+  }
+  
+  .titleD {
+      &Line {
+          display: flex;
+          align-items: center;
+      }
+      &C {
+          margin: 0 16px;
+          width: 37px;
+          height: 17px;
+          background: url("../img/titleD01.svg") no-repeat center;
+          background-size: contain;
+      }
+      &L,
+      &R {
+          flex: 1;
+          position: relative;
+          height: 1px;
+          background-color: #fff;
+          &::before,
+          &::after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              width: 7px;
+              height: 7px;
+              transform: translate(0, -50%) rotate(45deg);
+              background-color: #fff;
+          }
+          &::before {
+              left: 0;
+          }
+          &::after {
+              right: 0;
+              transform: translate(0, -50%) rotate(45deg);
+          }
+      }
+  }
+  
+  .contentBg {
+      position: relative;
+      margin: 3.5px;
+      padding: 32px;
+      border: 1px solid #FFFFFF;
+      background-color: rgba(255, 255, 255, 0.6);
+      &::before,
+      &::after,
+      .frameD::before,
+      .frameD::after {
+          content: "";
+          position: absolute;
+          width: 7px;
+          height: 7px;
+          background-color: #fff;
+      }
+      &::before {
+          top: -3.5px;
+          left: -3.5px;
+      }
+      &::after {
+          top: -3.5px;
+          right: -3.5px;
+      }
+      .frameD::before {
+          bottom: -3.5px;
+          left: -3.5px;
+      }
+      .frameD::after {
+          bottom: -3.5px;
+          right: -3.5px;
+      }
+  }
+  
+  .yearsTitle {
+      position: relative;
+      margin-bottom: 16px;
+      color: #0d386a;
+      &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: -4px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 116px;
+          height: 18px;
+          background: url("../img/titleD02.svg") no-repeat center;
+          background-size: contain;
+      }
+  }
+  
+  .siteLink {
+      .list {
+          display: flex;
+          justify-content: center;
+          >li:first-child {
+              margin-right: 32px;
+          }
       }
   }

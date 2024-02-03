@@ -73,9 +73,9 @@ $(document).ready(function() {
 
             // 在每個元素上初始化 infiniteslide 插件
             $(element).infiniteslide({
-                'speed': 10, // 速度 單位是 px/秒
+                'speed': 100, // 速度 單位是 px/秒
                 'direction': direction, // 根據 data-direction 屬性設定方向
-                'pauseonhover': true, // 滑鼠懸停時暫停
+                'pauseonhover': false, // 滑鼠懸停時暫停
                 'responsive': false, // 子元素的寬度以百分比指定時
                 'clone': clone // 子元素的複製次數
             });
@@ -83,11 +83,8 @@ $(document).ready(function() {
     });
 
     $('.grid').masonry({
-
         itemSelector: '.grid-item',
-
         columnWidth: 320
-
     });
     var swiper = new Swiper(".mySwiper", {
         effect: "coverflow",
@@ -99,95 +96,13 @@ $(document).ready(function() {
             stretch: 0,
             depth: 100,
             modifier: 1,
-            slideShadows: true,
+            slideShadows: false,
         },
         pagination: {
             el: ".swiper-pagination",
         },
     });
 
-    function init() {
-        // 選擇所有帶有 'home-snap-section' 類的元素
-        document.querySelectorAll('.home-snap-section').forEach(function(section) {
-            var targets = [];
-            var container = section.querySelector('.snap-container');
-            var message = section.querySelector('.message');
-
-            // 選擇所有 'snap-container' 中的 '.col' 元素，並將它們添加到 targets 數組中
-            section.querySelectorAll('.snap-container .col').forEach(function(image) {
-                targets.push({
-                    image: image,
-                    speed: image.dataset.speed || 1,
-                    mask: image.querySelector('.mask'),
-                    lastOffset: null
-                });
-            });
-
-            // 定義動畫函數，使用 requestAnimationFrame 進行連續的動畫更新
-            function animate() {
-                for (var i = 0; i < targets.length; i++) {
-                    update(targets[i]);
-                }
-
-                window.requestAnimationFrame(animate);
-            }
-
-            // 定義更新函數，根據視口中的位置更新圖像的遮罩
-            function update(target) {
-                var rect = target.image.getBoundingClientRect();
-                var screenHeight = window.innerHeight;
-                var inViewport = rect.top < screenHeight && rect.bottom > 0;
-
-                if (inViewport) {
-                    var offset = screenHeight / 2 - rect.top;
-                    offset = offset * target.speed - offset;
-                    offset = offset * -1;
-
-                    if (offset !== target.lastOffset) {
-                        target.mask.style.transform = "translateY(".concat(offset, "px)");
-                        target.lastOffset = offset;
-                    } else {
-                        if (offset !== (offset | 0)) {
-                            offset = offset | 0;
-                            target.mask.style.transform = "translateY(".concat(offset, "px)");
-                        }
-                    }
-                }
-            }
-
-            // 定義模糊函數，根據容器的位置更新消息的模糊效果
-            function blur() {
-                var rect = container.getBoundingClientRect();
-                var screenHeight = window.innerHeight;
-                var start = screenHeight / 2;
-                var end = 0;
-                var inRange = rect.top < start && rect.bottom > screenHeight - end;
-                var maxRange = rect.height - start + (screenHeight - end) - screenHeight;
-
-                if (inRange) {
-                    var progress = Math.min(maxRange, Math.max(0, start - rect.top));
-                    var delta = progress / maxRange;
-                    updateMessage(delta);
-                } else {
-                    updateMessage(rect.top < start ? 1.0 : 0);
-                }
-
-                window.requestAnimationFrame(blur);
-            }
-
-            // 定義更新消息函數，根據過渡更新消息的模糊和透明度
-            function updateMessage(delta) {
-                var blur = 10 * delta;
-                var opacity = 1 - delta;
-                message.style.filter = "blur(".concat(blur, "px)");
-                message.style.opacity = opacity;
-            }
-
-            // 使用 requestAnimationFrame 啟動動畫和模糊效果的更新
-            window.requestAnimationFrame(animate);
-            window.requestAnimationFrame(blur);
-        });
-    }
     $("#tab1").show();
     $("#tab2").hide();
 
@@ -207,5 +122,25 @@ $(document).ready(function() {
         // 切換按鈕的 active 狀態
         $(".tab-btn").removeClass("active");
         $(this).addClass("active");
+    });
+
+
+    window.addEventListener('scroll', function() {
+        let sections = document.querySelectorAll('.dynamicBG-container');
+        sections.forEach(function(section, index) {
+            let rect = section.getBoundingClientRect();
+            if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                // Add blur class when the section is in view
+                section.classList.add('blur');
+            } else {
+                // Remove blur class when the section is out of view
+                section.classList.remove('blur');
+            }
+        });
+        if (window.scrollY <= 0) {
+            sections.forEach(function(section) {
+                section.classList.remove('blur');
+            });
+        }
     });
 });
