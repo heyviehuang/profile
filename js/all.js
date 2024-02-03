@@ -188,5 +188,24 @@ $(document).ready(function() {
             window.requestAnimationFrame(blur);
         });
     }
+    $("#tab1").show();
+    $("#tab2").hide();
 
+    // 按鈕切換內容
+    $(".tab-btn").click(function() {
+        var tabId = $(this).attr("id");
+
+        // 使用 if 條件判斷來切換內容
+        if (tabId === "btn-tab1") {
+            $("#tab1").show();
+            $("#tab2").hide();
+        } else if (tabId === "btn-tab2") {
+            $("#tab1").hide();
+            $("#tab2").show();
+        }
+
+        // 切換按鈕的 active 狀態
+        $(".tab-btn").removeClass("active");
+        $(this).addClass("active");
+    });
 });

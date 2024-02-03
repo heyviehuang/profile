@@ -52,23 +52,31 @@
 
     <main class="home-snap-section">
         <!-- 個人簡介 -->
-        <section id="personalInformation" class="personalInformation message">
+        <section id="personalInformation" class="personalInformation">
             <!-- 基本資料 -->
             <div class="education wrap">
                 <img class="headShot" src="./img/img-headShot.png" alt="頭像">
                 <div class="wordsContainer">
-                    <h2>名</h2>
-                    <h5>英文名</h5>
-                    <h3 class="">學</h3>
-                    <h5 class="">2018/09~2019/06 (1年)<br>私立佛光大學 | 資訊應用學系 碩士畢業</h5>
+                    <h2>黃暄晴</h2>
+                    <h5>Sally Huang</h5>
+                    <h3>學歷</h3>
+                    <h5>2018/09~2019/06 (1年)<br>私立佛光大學 | 資訊應用學系 碩士畢業</h5>
                 </div>
             </div>
             <!-- 工作經歷 -->
             <div class="workExperience wrap">
-                <h3 class="">工作經歷</h3>
-                <table class="list-pc">
+                <h3>工作經歷</h3>
+                <table class="wrap">
                     <tbody>
-                        <tr class="">
+                        <tr>
+                            <td>
+                                <h6>2023-06~現在</h6>
+                            </td>
+                            <td>
+                                <h5>金田餐飲股份有限公司 | 網頁設計師</h5>
+                            </td>
+                        </tr>
+                        <tr>
                             <td>
                                 <h6>2022-05~2023-02 (10個月)</h6>
                             </td>
@@ -76,12 +84,8 @@
                                 <h5>智冠科技股份有限公司 | 平面/網頁設計師</h5>
                             </td>
                         </tr>
-                        <tr class="">
-                            <td>
-                                <img src="./img/img-arrow.png" alt="arrow">
-                            </td>
-                        </tr>
-                        <tr class="">
+
+                        <tr>
                             <td>
                                 <h6>2019-09~2021-10 (2年)</h6>
                             </td>
@@ -89,12 +93,8 @@
                                 <h5>恆為科技有限公司 | 美術設計師</h5>
                             </td>
                         </tr>
-                        <tr class="">
-                            <td>
-                                <img src="./img/img-arrow.png" alt="arrow">
-                            </td>
-                        </tr>
-                        <tr class="">
+
+                        <tr>
                             <td>
                                 <h6>2017/07~2017/12 (6個月，實習)</h6>
                             </td>
@@ -107,23 +107,23 @@
             </div>
             <!-- 專業技能 -->
             <div class="skill wrap">
-                <h3 class="">專業技能</h3>
+                <h3>專業技能</h3>
                 <ul class="list">
-                    <li class="">
-                        <h5>影像處理</h5>
-                        <h6>✦ Photoshop　✦ Illustrator　✦ Painter　✦ Clip Studio Paint　✦ Procreate</h6>
+                    <li>
+                        <h5>美術設計</h5>
+                        <h5>✦ Photoshop　✦ Illustrator　✦ Painter　✦ Clip Studio Paint　✦ Procreate</h5>
                     </li>
-                    <li class="">
+                    <li>
                         <h5>程式設計</h5>
-                        <h6>✦ HTML　✦ CSS　✦ jQuery　✦Bootstrap　✦WordPress　✦ C#</h6>
+                        <h5>✦ HTML　✦ CSS　✦ SASS　✦ jQuery　✦Bootstrap　✦WordPress　✦ C#</h5>
                     </li>
-                    <li class="">
-                        <h5>多媒體設計</h5>
-                        <h6>✦ Unity3D　✦ DragonBones　✦ 3ds Max　✦ Egret Engine</h6>
+                    <li>
+                        <h5>遊戲設計</h5>
+                        <h5>✦ Unity3D　✦ DragonBones　✦ 3ds Max　✦ Egret Engine</h5>
                     </li>
-                    <li class="">
+                    <li>
                         <h5>專案溝通</h5>
-                        <h6>✦ Adobe XD　✦ Figma　✦ GitHub　✦ Git</h6>
+                        <h5>✦ Adobe XD　✦ Figma　✦ GitHub　✦ Git</h5>
                     </li>
                 </ul>
             </div>
@@ -133,10 +133,10 @@
         <section id="gallery" class="gallery snap-container">
             <!-- 網頁作品列表 -->
             <div class="webDesign">
-                <h3 class="">Web Design</h3>
+                <h3 class="sectionTitle">Web Design</h3>
                 <div class="container">
                     <!-- 原創網頁作品 -->
-                    <h4 class="">網頁原創設計</h4>
+                    <h4>網頁原創設計</h4>
                     <p>此四件作品皆為原創設計，非有實體營運；
                         <br/> -《檸夏果汁》與《敖翔飯店》皆為沒有使用套版的網站，純手刻HTML與CSS；
                         <br/> -《晴空雜貨店》以WordPress系統架設，伺服器部屬在GCP，採用Cloudflare提供的免費憑證；
@@ -144,7 +144,7 @@
                         <br/>點擊以下按鈕即可瀏覽網頁:
                     </p>
                     <ul class="listWEB warp">
-                        <li class="">
+                        <li>
                             <a class="anim-sparkle" href="https://heyviehuang.github.io/ningxia/" target="_blank">
                                 <img src="./img/img-webDesign-list-btn01.png" alt="Image">
                             </a>
@@ -153,7 +153,7 @@
                                 <p>果汁網站，採明亮的水果色調，以冷飲的氣泡、柳橙與雞蛋花等做裝飾，讓夏天沁涼的果汁帶來暢快。</p>
                             </div>
                         </li>
-                        <li class="">
+                        <li>
                             <a class="anim-sparkle" href="https://heyviehuang.github.io/ningxia/" target="_blank">
                                 <img src="./img/img-webDesign-list-btn01.png" alt="Image">
                             </a>
@@ -162,7 +162,7 @@
                                 <p>果汁網站，採明亮的水果色調，以冷飲的氣泡、柳橙與雞蛋花等做裝飾，讓夏天沁涼的果汁帶來暢快。</p>
                             </div>
                         </li>
-                        <li class="">
+                        <li>
                             <a class="anim-sparkle" href="https://heyviehuang.github.io/ningxia/" target="_blank">
                                 <img src="./img/img-webDesign-list-btn01.png" alt="Image">
                             </a>
@@ -171,7 +171,7 @@
                                 <p>果汁網站，採明亮的水果色調，以冷飲的氣泡、柳橙與雞蛋花等做裝飾，讓夏天沁涼的果汁帶來暢快。</p>
                             </div>
                         </li>
-                        <li class="">
+                        <li>
                             <a class="anim-sparkle" href="https://heyviehuang.github.io/ningxia/" target="_blank">
                                 <img src="./img/img-webDesign-list-btn01.png" alt="Image">
                             </a>
@@ -184,12 +184,12 @@
 
 
                     <!-- 實務經驗BTN -->
-                    <a href="">實務經驗<img src="" alt=""></a>
+                    <a href="">Web Design on work<img src="" alt=""></a>
                 </div>
             </div>
             <!-- 菜單跑馬燈 -->
             <div class="menu">
-                <h3 class="">平面</h3>
+                <h3>BANNER</h3>
                 <!-- 菜單01 -->
                 <!-- <ul class="infiniteslide" data-direction="right" data-clone="2">
                     <li>
@@ -262,6 +262,7 @@
             </div>
             <!-- 繪畫作品輪播 -->
             <div class="paintingWork">
+                <h3 class="sectionTitle">Drawing</h3>
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -295,20 +296,23 @@
                             <img src="./img/img-paintingWork10.png" />
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
                 </div>
             </div>
             <!-- 遊戲作品Tab -->
             <div class="gameWorkByUnity">
-                <h3 class="">Unity 遊戲作品</h3>
+                <h3 class="sectionTitle">Unity Game</h3>
+                <div class="tabs">
+                    <button class="tab-btn active" id="btn-tab1">A</button>
+                    <button class="tab-btn" id="btn-tab2">B</button>
+                </div>
                 <ul class="container">
-                    <li class="natsuMatsuri">
+                    <li id="tab1" class="natsuMatsuri">
                         <p class="natsuMatsuri-p">《夏日祭》是結合兩款經典網頁遊戲《夏の縁日》玩法與《忍豆風雲》風格的二創祭典小遊戲，由五個日本祭典常見的小攤位組成:打靶、撈金魚、面具、章魚燒與套圈圈，從空曠的草地到煙火絢爛的熱鬧祭典，讓玩家就算沒有去日本也能透過《夏日祭》體驗日本的祭典文化氛圍；<br>本遊戲使用Unity遊戲引擎為開發平台，C#為程式語言:</p>
                         <div class="embed-container embedvideo">
                             <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube-nocookie.com/embed/vbu8PBo-8Uw?rel=0" width="560"></iframe>
                         </div>
                     </li>
-                    <li class="windFantasy">
+                    <li id="tab2" class="windFantasy">
                         <p class="windFantasy-p">《風色幻想Online》是由《弘煜科技》所製作的大型多人線上角色扮演遊戲，於2009年上線，奇幻的北歐故事背景與日系原畫風格，深深打動人心，遺憾的是在2014年結束營運，所以此款《風色幻想Online》重製便就此誕生，非營利，只為回憶；<br>本遊戲使用Unity遊戲引擎為開發平台，Photon Cloud為伺服器處理角色的動作同步，並同時接上Photon Chat讓多名玩家可以在同一個遊戲場景中做文字訊息交流:</p>
                         <div class="embed-container embedvideo">
                             <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube-nocookie.com/embed/bqvN-oHkwJs?rel=0" width="560"></iframe>
@@ -322,46 +326,46 @@
         <section id="careerRecord" class="careerRecord">
             <!-- 專業證照-->
             <div class="license">
-                <h3 class="">專業證照</h3>
+                <h3>專業證照</h3>
                 <ul>
-                    <li class="">✦ TQC 企業人才技能合格證書 － Dreamweaver CS6</li>
-                    <li class="">✦ TQC 企業人才技能合格證書 － Java JDK 1.4</li>
-                    <li class="">✦ 經濟部產業人才能力鑑定證書 － 初級行動裝置程式設計師 (Android)</li>
-                    <li class="">✦ 經濟部產業人才能力鑑定證書 － 初級行動遊戲程式設計師 (Android)</li>
-                    <li class="">✦ Silicon Stone Education - Designing 3D Animation Games Using Unity 國際認證</li>
-                    <li class="">✦ Silicon Stone Education - Designing 3D Animation Games Using 3D Studio Max 國際認證</li>
-                    <li class="">✦ Microsoft Technology Associate - Software Development Fundamentals (C#)</li>
+                    <li>✦ TQC 企業人才技能合格證書 － Dreamweaver CS6</li>
+                    <li>✦ TQC 企業人才技能合格證書 － Java JDK 1.4</li>
+                    <li>✦ 經濟部產業人才能力鑑定證書 － 初級行動裝置程式設計師 (Android)</li>
+                    <li>✦ 經濟部產業人才能力鑑定證書 － 初級行動遊戲程式設計師 (Android)</li>
+                    <li>✦ Silicon Stone Education - Designing 3D Animation Games Using Unity 國際認證</li>
+                    <li>✦ Silicon Stone Education - Designing 3D Animation Games Using 3D Studio Max 國際認證</li>
+                    <li>✦ Microsoft Technology Associate - Software Development Fundamentals (C#)</li>
                 </ul>
             </div>
             <!-- 求學經歷 -->
             <div class="studyExperience">
-                <h3 class="">求學經歷</h3>
+                <h3>求學經歷</h3>
                 <ul>
                     <li>
-                        <h6 class="">2016</h6>
+                        <h6>2016</h6>
                         <ul>
-                            <li class="">✦ 以影像深度資訊進行行為辨識與互動行為分析, 助理, 科技部專題研究計畫</li>
-                            <li class="">✦ 以擴增實境為方法之生態模擬研究, 研究生, 科技部大專學生研究計畫</li>
-                            <li class="">✦ 宜蘭地區文創觀光跨領域加值服務之技術開發與應用研究, 研究生, 科技部專題研究計畫</li>
+                            <li>✦ 以影像深度資訊進行行為辨識與互動行為分析, 助理, 科技部專題研究計畫</li>
+                            <li>✦ 以擴增實境為方法之生態模擬研究, 研究生, 科技部大專學生研究計畫</li>
+                            <li>✦ 宜蘭地區文創觀光跨領域加值服務之技術開發與應用研究, 研究生, 科技部專題研究計畫</li>
                         </ul>
                     </li>
                     <li>
-                        <h6 class="">2017</h6>
+                        <h6>2017</h6>
                         <ul>
-                            <li class="">✦ 宜蘭地區文創觀光跨領域加值服務之技術開發與應用研究, 研究生, 科技部專題研究計畫</li>
-                            <li class="">✦ DIGI + Talent跨域數位人才加速躍升計畫, 研習生, 資策會數位教育研究所實習</li>
+                            <li>✦ 宜蘭地區文創觀光跨領域加值服務之技術開發與應用研究, 研究生, 科技部專題研究計畫</li>
+                            <li>✦ DIGI + Talent跨域數位人才加速躍升計畫, 研習生, 資策會數位教育研究所實習</li>
                         </ul>
                     </li>
                 </ul>
             </div>
             <!-- 附加連結 -->
             <div class="siteLink">
-                <h3 class="">附加連結</h3>
-                <ul class="">
-                    <li class="">
+                <h3>附加連結</h3>
+                <ul>
+                    <li>
                         <a class="anim-sparkle" href="https://github.com/heyviehuang" target="_blank"><img src="./img/img-btn-github.png" alt="GitHub連結"></a>
                     </li>
-                    <li class="">
+                    <li>
                         <a class="anim-sparkle" href="./img/OWG7Zm.jpg" target="_blank"><img src="./img/img-btn-score.png" alt="在校成績"></a>
                     </li>
                 </ul>

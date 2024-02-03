@@ -116,8 +116,20 @@
   
   .education {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
+      text-align: left;
+  }
+  
+  .workExperience {
+      table {
+          display: flex;
+          justify-content: space-evenly;
+          h5 {
+              text-align: left;
+              margin-left: 8px;
+          }
+      }
   }
   
   // 網頁列表
