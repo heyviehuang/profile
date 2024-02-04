@@ -2,22 +2,23 @@
   
   .personalInformation,
   .gallery,
-  .careerRecord {
-      margin-bottom: 5rem;
-  }
+  .careerRecord {}
   
   .education,
   .workExperience,
   .skill,
-  .webDesign,
-  .commerceWork,
-  .paintingWork,
-  .gameWorkByUnity,
-  .modelingWorkBy3dsMax,
   .license,
   .studyExperience,
   .siteLink {
-      padding: 4rem 0;
+      padding: 2rem 0;
+  }
+  
+  .webDesign,
+  .banner,
+  .paintingWork,
+  .gameWorkByUnity,
+  .modelingWorkBy3dsMax {
+      padding: 10rem 0;
   }
   
   body {
@@ -161,13 +162,28 @@
   }
   
   .webDesign {
+      position: relative;
+      background-color: #e0e0e0;
+      &:after,
+      &:before {
+          position: absolute;
+          right: 0;
+          left: 0;
+          display: block;
+          width: 100%;
+          height: 4px;
+          content: "";
+          background-color: #fff;
+      }
+      &:after {
+          bottom: 8px;
+      }
+      &:before {
+          top: 8px;
+      }
       .sectionTitle {
           color: $cornflower-blue;
       }
-  }
-  
-  .gallery {
-      background: linear-gradient(0deg, transparent 0%, $light-blue 5%, #f7f3eb 100%, transparent);
   }
   
   // 網頁列表
@@ -181,7 +197,7 @@
           flex-direction: row;
           width: 80%;
           margin: 2rem auto;
-          div {
+          .textContainer {
               display: flex;
               flex-direction: column;
               justify-content: center;
@@ -195,6 +211,57 @@
           & p {
               margin-right: 2rem;
           }
+      }
+  }
+  
+  .p-topOther__link {
+      width: 40%;
+  }
+  
+  .p-topOther__linkThumb {
+      aspect-ratio: 320/410;
+      margin-right: auto;
+      margin-left: auto;
+      -webkit-mask-image: url(../img/mask_window.svg);
+      mask-image: url(../img/mask_window.svg);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: contain;
+      mask-size: contain;
+  }
+  
+  @media (any-hover: hover) {
+      .p-topOther__linkThumb {
+          position: relative;
+          z-index: 1;
+          overflow: hidden
+      }
+      .p-topOther__linkThumb img {
+          transition: transform 2s cubic-bezier(.22, 1, .36, 1)
+      }
+      .p-topOther__linkThumb:hover img {
+          transform: scale(1.1)
+      }
+  }
+  
+  .p-topOther__linkImage {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover
+  }
+  
+  .graphicContainer {
+      background: #b1e1fff9 url('../img/stripeclear.png') repeat center;
+  }
+  
+  .banner {
+      position: relative;
+      .sectionTitle {
+          position: absolute;
+          bottom: 10rem;
+          right: 20%;
+          color: $steel-blue;
       }
   }
   
@@ -212,37 +279,26 @@
       }
   }
   
-  .menu {
+  .paintingWork {
+      display: flex;
+      justify-content: end;
+      overflow: hidden;
       position: relative;
       .sectionTitle {
           position: absolute;
-          bottom: -1rem;
-          left: 20%;
-          z-index: 2;
-          color: $steel-blue;
-      }
-  }
-  
-  .paintingWork {
-      display: flex;
-      overflow: hidden;
-      h3 {
-          font-size: 6rem;
+          bottom: 5rem;
+          left: 10%;
+          z-index: 10;
+          color: $sapphire;
+          text-align: left;
       }
       img {
           height: 100%;
       }
   }
   
-  .drTitle {
-      display: block;
-      width: 20%;
-      overflow: hidden;
-  }
-  
   .swiperContainer {
-      display: flex;
-      width: 80%;
+      width: 60%;
       img {
           border-radius: 8px;
       }
@@ -250,9 +306,12 @@
   
   .gameWorkByUnity {
       .sectionTitle {
-          font-size: 6rem;
-          color: #fff;
+          color: $light-blue;
       }
+  }
+  
+  .careerRecord {
+      background-color: rgba(255, 251, 242, 0.61);
   }
   
   .titleD {
@@ -298,7 +357,7 @@
       margin: 3.5px;
       padding: 32px;
       border: 1px solid #FFFFFF;
-      background-color: rgba(255, 255, 255, 0.6);
+      background-color: rgba(255, 255, 255, 0.555);
       &::before,
       &::after,
       .frameD::before,
