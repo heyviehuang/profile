@@ -69,6 +69,9 @@ nav {
         transition: transform 0.6s;
         transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 300%, 0);
     }
+    .navItem__container:hover & {
+        color: $sky-blue;
+    }
     .navItem__container:hover &::before,
     &.active::before {
         transform: scale3d(3.3, 3.3, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -160%, 0);
