@@ -22,6 +22,17 @@
 }
 
 //元件
+//卡片
+.card {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    .textContainer {
+        color: black;
+        font-size: 3rem;
+    }
+}
+
 //Top按鈕
 .btnTop {
     position: fixed;
@@ -36,7 +47,146 @@
     }
 }
 
-// 按鈕
+// 特殊按鈕
+.btn {
+    position: relative;
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.star-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+}
+
+.star-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-5 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-6 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.8s ease;
+}
+
+.btn:hover .star-1 {
+    position: absolute;
+    top: -8%;
+    left: -5%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+.btn:hover .star-2 {
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+.btn:hover .star-3 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+.btn:hover .star-4 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+.btn:hover .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 100%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+.btn:hover .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+.fil0 {
+    fill: #fffdef;
+}
+
 // 輪播
 .swiper-slide {
     background-position: center;
@@ -47,6 +197,75 @@
 // 瀑布流
 .grid-item {
     width: 320px;
+}
+
+//彈窗
+
+/* 遮罩 */
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 50;
+}
+
+
+/* 彈窗內容 */
+
+.webOnWorkModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    padding: 2rem;
+    background: url("../img/img-bg-gallery-item.png") center;
+    background-color: $cornflower-blue;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #FFFFFF;
+    z-index: 51;
+    overflow: hidden;
+    .contentContainer {
+        max-height: 100%;
+        padding: 2rem;
+        overflow-y: auto;
+        @include custom-scrollbar($sapphire,
+        $cornflower-blue,
+        6px);
+    }
+    .list {
+        display: flex;
+        justify-content: space-evenly;
+        &>* {
+            margin: 0 0.5rem;
+        }
+    }
+    .closeBtn {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        cursor: pointer;
+        transition: .1s ease;
+        font-family: "Noto Sans TC", sans-serif;
+        &:hover {
+            transform: rotate(360deg) scale(1.2);
+        }
+    }
+}
+
+
+/* 鎖定滾動 */
+
+.no-scroll {
+    overflow: hidden;
 }
 
 //淡入淡出動畫

@@ -101,6 +101,9 @@ $(document).ready(function() {
         pagination: {
             el: ".swiper-pagination",
         },
+        navigation: {
+            nextEl: ".swiper-next",
+        },
     });
 
     $("#tab1").show();
@@ -120,8 +123,8 @@ $(document).ready(function() {
         }
 
         // 切換按鈕的 active 狀態
-        $(".tab-btn").removeClass("active");
-        $(this).addClass("active");
+        $(".tab-btn").removeClass("tab--active");
+        $(this).addClass("tab--active");
     });
 
 
@@ -142,5 +145,17 @@ $(document).ready(function() {
                 section.classList.remove('blur');
             });
         }
+    });
+
+    // 打開彈窗
+    $("#openModalBtn").click(function() {
+        $("body").addClass("no-scroll");
+        $(".overlay, .webOnWorkModal").fadeIn();
+    });
+
+    // 關閉彈窗
+    $(".closeBtn, .overlay").click(function() {
+        $("body").removeClass("no-scroll");
+        $(".overlay, .webOnWorkModal").fadeOut();
     });
 });

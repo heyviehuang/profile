@@ -17,32 +17,36 @@ h2 {
 }
 
 h3 {
+    margin: 8px auto;
     font-size: $h3-font-size;
     font-family: "Poiret One", sans-serif;
-    margin: 8px auto;
 }
 
 h4 {
+    margin: 8px auto;
     font-size: $h4-font-size;
     font-family: "Poiret One", sans-serif;
+    line-height: 1.5rem;
 }
 
 h5 {
-    font-size: $h5-font-size;
-    font-family: "Poiret One", sans-serif;
     margin: 8px auto;
-    line-height: 1.2rem;
+    font-size: $h5-font-size;
+    font-family: "Noto Sans TC", sans-serif;
+    line-height: 1.5rem;
 }
 
 h6 {
-    font-size: $h6-font-size;
-    font-family: "Poiret One", sans-serif;
     margin: 8px auto;
-    line-height: 1.2rem;
+    font-size: $h6-font-size;
+    font-family: "Noto Sans TC", sans-serif;
+    line-height: 1.5rem;
 }
 
 p {
+    font-size: $h5-font-size;
     color: $navy-blue;
     font-family: "Noto Sans TC", sans-serif;
-    line-height: 1.2rem;
+    line-height: 2rem;
+    color: $navy-blue;
 }
