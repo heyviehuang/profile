@@ -1,3 +1,28 @@
+//RWD
+@mixin pcXL {
+    @media(max-width: 1440px) {
+        @content
+    }
+}
+
+@mixin pcLG {
+    @media(max-width: 1024px) {
+        @content
+    }
+}
+
+@mixin pad {
+    @media(max-width: 768px) {
+        @content
+    }
+}
+
+@mixin mobile {
+    @media(max-width: 425px) {
+        @content
+    }
+}
+
 //重複函數
 // 捲軸樣式定義
 @mixin custom-scrollbar($track-bg, $thumb-bg, $width) {
@@ -34,9 +59,6 @@
 //圖片取代文字
 @mixin hide-text {
     overflow: hidden;
-    width: 70.16px;
-    height: 78px;
-    background: url("../img/logo.svg") no-repeat center;
     text-indent: 101%;
     white-space: nowrap;
 }

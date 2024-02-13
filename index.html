@@ -57,7 +57,7 @@
         </nav>
     </header>
 
-    <main class="home-snap-section">
+    <main class="home-snap-section ">
         <!-- 個人簡介 -->
         <section id="personalInformation" class="personalInformation wrap">
             <img class="personalIfobefore" src="./img/personalIfobefore.webp" alt="裝飾線">
@@ -108,10 +108,10 @@
 
                                     <tr>
                                         <td>
-                                            <h4>2017/07~2017/12<small style="font-size: 1rem;"> (實習)</small></h4>
+                                            <h4>2017/07~2017/12</h4>
                                         </td>
                                         <td>
-                                            <h5>財團法人資訊工業策進會 | 3D美術人員</h5>
+                                            <h5>財團法人資訊工業策進會 | 3D美術人員<small style="font-size: 1rem;"> (實習)</small></h5>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -155,7 +155,7 @@
         <section id="gallery" class="gallery">
             <!-- 網頁作品列表 -->
             <div class="webDesign">
-                <img class="FLineBefore" src="./img/FLine.svg" alt="裝飾線">
+                <img id="FLine01" class="FLineBefore" src="./img/FLine.svg" alt="裝飾線">
                 <h3 class="sectionTitle">WEB DESIGNS</h3>
                 <!-- 原創網頁作品 -->
                 <ul class="listWEB wrap">
@@ -201,21 +201,22 @@
                             <p>為沒有使用套版的網站，純手刻HTML與CSS，果汁網站，採明亮的水果色調，以冷飲的氣泡、柳橙與雞蛋花等做裝飾，讓夏天沁涼的果汁帶來暢快。</p>
                         </div>
                     </li>
-                </ul>
-                <div class="windowBig wrap">
-                    <a class=" p-topOther__link" href="https://heyviehuang.github.io/ningxia/" target="_blank">
-                        <div class="p-topOther__linkThumb">
-                            <img class="webLogo" src="./img/CSLogo.svg" alt="晴空雜貨店LOGO">
-                            <picture>
-                                <img class="p-topOther__linkImage anim-sparkle" src="./img/webDesign03.webp" alt="Image">
-                            </picture>
+                    <li class="windowBig wrap">
+                        <a class=" p-topOther__link" href="https://heyviehuang.github.io/ningxia/" target="_blank">
+                            <div class="p-topOther__linkThumb">
+                                <img class="webLogo" src="./img/CSLogo.svg" alt="晴空雜貨店LOGO">
+                                <picture>
+                                    <img class="p-topOther__linkImage anim-sparkle" src="./img/webDesign03.webp" alt="Image">
+                                </picture>
+                            </div>
+                        </a>
+                        <div class="textContainer">
+                            <h3 class="webName">【晴空雜貨店】</h3>
+                            <p>為沒有使用套版的網站，純手刻HTML與CSS，果汁網站，採明亮的水果色調，以冷飲的氣泡、柳橙與雞蛋花等做裝飾，讓夏天沁涼的果汁帶來暢快。</p>
                         </div>
-                    </a>
-                    <div class="textContainer">
-                        <h3 class="webName">【晴空雜貨店】</h3>
-                        <p>為沒有使用套版的網站，純手刻HTML與CSS，果汁網站，採明亮的水果色調，以冷飲的氣泡、柳橙與雞蛋花等做裝飾，讓夏天沁涼的果汁帶來暢快。</p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
+
                 <!-- 實務經驗BTN -->
                 <button id="openModalBtn" class="btn workBtn" onclick="openModal()">
                         <h4>
@@ -402,7 +403,7 @@
                     </div>
                 </div>
 
-                <img class="FLineAfter" src="./img/FLine.svg" alt="裝飾線">
+                <img id="FLine02" class="FLineAfter" src="./img/FLine.svg" alt="裝飾線">
             </div>
             <div class="graphicContainer">
                 <!-- 菜單跑馬燈 -->

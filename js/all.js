@@ -158,4 +158,13 @@ $(document).ready(function() {
         $("body").removeClass("no-scroll");
         $(".overlay, .webOnWorkModal").fadeOut();
     });
+
+
+    if (window.innerWidth <= 768) {
+        document.getElementById("FLine01").src = "./img/FLine2.svg";
+        document.getElementById("FLine02").src = "./img/FLine2.svg";
+    } else {
+        document.getElementById("FLine01").src = "./img/FLine.svg";
+        document.getElementById("FLine02").src = "./img/FLine.svg";
+    }
 });

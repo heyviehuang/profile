@@ -24,6 +24,12 @@
       
       .logo {
           @include hide-text;
+          width: 70.16px;
+          height: 78px;
+          background: url("../img/logo.svg") no-repeat center;
+          @include pad {
+              height: 60px;
+          }
       }
       
       .logoMain {
@@ -33,12 +39,24 @@
           //   transform: translate(-50%, -50%);
           width: 476px;
           margin: 0 auto;
+          @include pad {
+              transform: translate(-50%, -50%) scale(0.7);
+          }
       }
       
       .sectionTitle {
           font-size: 10rem;
           font-weight: 700;
           color: $sapphire;
+          @include pcLG {
+              font-size: 7.5rem;
+          }
+          @include pad {
+              font-size: 6.5rem;
+          }
+          @include mobile {
+              font-size: 5rem;
+          }
       }
       
       .vertical-lr {
@@ -59,6 +77,10 @@
           background: -mozar-gradient(#8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
           background: -oar-gradient(#8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
           transition: filter 0.3s ease-in-out;
+          @include pad {
+              background: url("../img/img-bg-main.jpg") bottom no-repeat;
+              background-size: cover;
+          }
       }
       
       .cloudL,
@@ -73,6 +95,9 @@
           animation-duration: 200s;
           animation-iteration-count: infinite;
           transition: 0.1s;
+          @include pad {
+              display: none;
+          }
       }
       
       .cloudL {
@@ -138,8 +163,6 @@
       }
       
       .personalInformation {
-          //   border: 2px solid #FFFFFF;
-          //   box-shadow: 0 0 5px #FFFFFF;
           margin: 2rem auto;
           .personalInfo-container {
               box-shadow: 8f, 0 0 60px rgba(43, 75, 144, 0.561) inset;
@@ -177,15 +200,25 @@
               }
               padding-left: 2rem;
           }
+          @include pad {
+              flex-direction: column;
+          }
+          @include mobile {
+              text-align: center;
+          }
       }
       
       .workExperience {
           table {
-              display: flex;
-              justify-content: space-evenly;
               h5 {
                   text-align: left;
                   margin-left: 8px;
+              }
+              h4 {
+                  @include mobile {
+                      font-size: 1.2rem;
+                      font-weight: 700;
+                  }
               }
           }
       }
@@ -193,7 +226,7 @@
       .webDesign {
           position: relative;
           background-color: #f7f3eb;
-          //   background: url("../img/img-bg-gallery-item.png") center;
+          overflow: hidden;
           &:after,
           &:before {
               position: absolute;
@@ -207,30 +240,67 @@
           }
           &:after {
               bottom: 2rem;
+              @include pad {
+                  bottom: .5rem;
+              }
           }
           &:before {
               top: 2rem;
+              @include pad {
+                  top: .5rem;
+              }
           }
           .sectionTitle {
               color: $cornflower-blue;
+              @include pcLG {
+                  font-size: 6rem;
+              }
           }
           .webName {
               color: $steel-blue;
               font-weight: 700;
+              @include pcLG {
+                  font-size: 1.4rem;
+              }
           }
           .FLineBefore {
               position: absolute;
               top: 50%;
               left: 1%;
               height: 45%;
-              transform: translate(-0%, -50%);
+              transform: translate(0, -50%);
+              @include pcLG {
+                  transform: translate(0, -50%) scale(0.9);
+              }
+              @include pad {
+                  display: block;
+                  top: 97.5%;
+                  left: 50%;
+                  transform: translate(0, -50%) rotate(-90deg) scale(1.2);
+              }
+              @include mobile {
+                  top: 98.5%;
+                  transform: translate(0, -50%) rotate(-90deg) scale(0.7);
+              }
           }
           .FLineAfter {
               position: absolute;
               top: 50%;
               right: 1%;
               height: 45%;
-              transform: translate(-0%, -50%);
+              transform: translate(0%, -50%);
+              @include pcLG {
+                  transform: translate(0, -50%) scale(0.9);
+              }
+              @include pad {
+                  top: 2.5%;
+                  right: 50%;
+                  transform: translate(0, -50%) rotate(-90deg) scale(1.2);
+              }
+              @include mobile {
+                  top: 1.5%;
+                  transform: translate(0, -50%) rotate(-90deg) scale(0.7);
+              }
           }
       }
       
@@ -239,27 +309,50 @@
           display: flex;
           flex-direction: row;
           justify-content: space-evenly;
-          &>li {
+          flex-wrap: wrap;
+          padding: 0 10%;
+          li {
               display: flex;
               flex-direction: column;
-              margin: 2rem;
+              width: 30%;
+              @include pad {
+                  flex-direction: row;
+                  margin: 2rem 1rem;
+                  width: 100%;
+              }
+              @include mobile {
+                  flex-direction: column;
+              }
               .textContainer {
                   display: flex;
                   flex-direction: column;
                   justify-content: center;
                   margin-top: .5rem;
+                  @include pad {
+                      padding-left: 2rem;
+                  }
+                  @include mobile {
+                      padding-left: 0;
+                  }
               }
           }
-      }
-      
-      .windowBig {
-          display: flex;
-          align-items: center;
-          width: 50%;
-          margin-top: 2rem;
-          .textContainer {
-              text-align: left;
-              padding-left: 2rem;
+          .windowBig {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              width: 100%;
+              margin-top: 2rem;
+              .textContainer {
+                  text-align: left;
+                  padding-left: 2rem;
+                  @include mobile {
+                      flex-direction: column;
+                      padding-left: 0;
+                  }
+              }
+              @include mobile {
+                  flex-direction: column;
+              }
           }
       }
       
@@ -284,6 +377,9 @@
               z-index: 10;
               filter: drop-shadow(0 0 8px #00000096);
               opacity: 0.8;
+              @include pad {
+                  transform: translate(-50%, -50%) scale(.8);
+              }
           }
       }
       
@@ -326,6 +422,9 @@
               box-shadow: 0 0 0 $sky-blue;
               transform: scale(1.2);
           }
+          @include mobile {
+              margin: 2rem auto;
+          }
       }
       
       .webOnWorkModal {
@@ -361,20 +460,32 @@
               max-width: 650px;
               max-height: 650px;
               border-radius: 8px;
+              @include mobile {
+                  max-width: 300px;
+              }
           }
       }
       
       .paintingWork {
           display: flex;
           justify-content: end;
-          overflow: hidden;
           position: relative;
+          overflow: hidden;
+          width: 100%;
+          @include mobile {
+              left: 0%;
+              width: 100%;
+          }
           .sectionTitle {
               position: absolute;
               bottom: 5rem;
               left: 10%;
               z-index: 10;
               text-align: left;
+              @include mobile {
+                  left: 10%;
+                  bottom: 2rem;
+              }
           }
           img {
               height: 100%;
@@ -386,6 +497,25 @@
               width: 500px;
               height: 500px;
               animation: spin 20s linear infinite;
+              @include pcLG {
+                  left: 2%;
+                  width: 300px;
+                  height: 300px;
+                  z-index: 10;
+              }
+              @include pad {
+                  top: 5%;
+                  left: 2%;
+                  width: 200px;
+                  height: 200px;
+                  z-index: 10;
+              }
+              @include mobile {
+                  //   display: none;
+                  top: 0;
+                  width: 150px;
+                  height: 150px;
+              }
           }
           .clock-arrow {
               @extend .clock;
@@ -395,6 +525,13 @@
               &:hover {
                   transition: 1s all;
                   transform: scale(1.2);
+              }
+              @include pcLG {
+                  transform: scale(.8)
+              }
+              @include mobile {
+                  //   display: none;
+                  //   transform: scale(.3)
               }
           }
       }
@@ -410,8 +547,12 @@
       
       .swiperContainer {
           width: 60%;
+          margin-right: 2rem;
           img {
               border-radius: 8px;
+          }
+          @include pcLG {
+              width: 80%;
           }
       }
       

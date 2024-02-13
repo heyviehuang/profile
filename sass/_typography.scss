@@ -6,6 +6,16 @@
 
 /* common font */
 
+html {
+    font-size: $font-size-root;
+    @include pad {
+        font-size: $font-size-root * 0.8;
+    }
+    @include mobile {
+        font-size: $font-size-root * 0.75;
+    }
+}
+
 h1 {
     font-size: $h1-font-size;
     font-family: "Poiret One", sans-serif;
@@ -33,14 +43,14 @@ h5 {
     margin: 8px auto;
     font-size: $h5-font-size;
     font-family: "Noto Sans TC", sans-serif;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 h6 {
     margin: 8px auto;
     font-size: $h6-font-size;
     font-family: "Noto Sans TC", sans-serif;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 p {

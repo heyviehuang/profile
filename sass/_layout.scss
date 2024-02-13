@@ -4,16 +4,16 @@
     margin: 0 auto;
     width: 100%;
     max-width: 1320px;
-    @media (max-width: 1140px) {
+    @media (max-width: 1440px) {
         max-width: map-get($container-max-widths, xl);
     }
-    @media (max-width:960px) {
+    @media (max-width: 1024px) {
         max-width: map-get($container-max-widths, lg);
     }
-    @media (max-width: 720px) {
+    @media (max-width: 768px) {
         max-width: map-get($container-max-widths, md);
     }
-    @media (max-width: 540px) {
+    @media (max-width: 425px) {
         max-width: map-get($container-max-widths, sm);
     }
 }
@@ -35,6 +35,10 @@ nav {
     width: 100%;
     padding: 0 2rem;
     background-color: rgba($gemstone-blue, 0.4);
+    @include pad {
+        flex-direction: column;
+        padding: 0;
+    }
 }
 
 .nav__a--logo {
@@ -46,9 +50,14 @@ nav {
 
 .nav__menuList {
     display: flex;
+    justify-content: space-around;
+    padding: 4px 0;
     .navItem__container {
         position: relative;
         overflow: hidden;
+    }
+    @include pad {
+        width: 100%;
     }
 }
 
@@ -58,6 +67,9 @@ nav {
     font-size: 20px;
     text-align: center;
     white-space: nowrap;
+    @include pad {
+        padding: 8px 0;
+    }
     &::before {
         content: "";
         position: absolute;
@@ -121,4 +133,35 @@ nav {
 .btnTop:hover {
     transform: translateY(-5px);
     background-color: $sapphire;
+}
+
+//loading
+.envelope {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    // width: 90vw;
+    // height: 90vh;
+    margin: 0;
+    stroke-width: 2px;
+    z-index: 50;
+    &:hover {
+        .top {
+            animation: 2s ease-in-out 2 alternate openEnvelope;
+        }
+    }
+}
+
+@keyframes openEnvelope {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: rotateX(180deg);
+    }
+}
+
+.top {
+    transform-origin: 150px 104px;
 }
