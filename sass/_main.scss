@@ -33,14 +33,11 @@
       }
       
       .logoMain {
-          //   position: absolute;
-          //   top: 50%;
-          //   left: 50%;
-          //   transform: translate(-50%, -50%);
           width: 476px;
           margin: 0 auto;
           @include pad {
               transform: translate(-50%, -50%) scale(0.7);
+              -webkit-transform: translate(-50%, -50%) scale(0.7);
           }
       }
       
@@ -73,10 +70,11 @@
           overflow: hidden;
           z-index: -1;
           background: linear-gradient(#8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
-          background: -webkitar-gradient(#8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
-          background: -mozar-gradient(#8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
+          background: -webkit-gradient(#8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
+          background: -moz-gradient(#8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
           background: -oar-gradient(#8bc6f0 0%, #71bbe9 70%, #68b6e5 100%);
           transition: filter 0.3s ease-in-out;
+          -webkit-transition: filter 0.3s ease-in-out;
           @include pad {
               background: url("../img/img-bg-main.jpg") bottom no-repeat;
               background-size: cover;
@@ -93,8 +91,11 @@
           background: url("../img/img-bgItem-cloud.png") repeat-x;
           background-size: cover;
           animation-duration: 200s;
+          -webkit-animation-duration: 200s;
           animation-iteration-count: infinite;
+          -webkit-animation-iteration-count: infinite;
           transition: 0.1s;
+          -webkit-transition: 0.1s;
           @include pad {
               display: none;
           }
@@ -103,25 +104,30 @@
       .cloudL {
           left: 0;
           animation-name: cloudAnimL;
+          -webkit-animation-name: cloudAnimL;
       }
       
       .cloudR {
           left: 130%;
           animation-name: cloudAnimR;
+          -webkit-animation-name: cloudAnimR;
       }
       
       @keyframes cloudAnimL {
           0% {
               opacity: 0.9;
               transform: translateX(-70%);
+              -webkit-transform: translateX(-70%);
           }
           50% {
               opacity: 0.7;
               transform: translateX(-50%);
+              -webkit-transform: translateX(-50%);
           }
           100% {
               opacity: 0.9;
               transform: translateX(-70%);
+              -webkit-transform: translateX(-70%);
           }
       }
       
@@ -129,14 +135,17 @@
           0% {
               opacity: 0.9;
               transform: translateX(-60%);
+              -webkit-transform: translateX(-60%);
           }
           50% {
               opacity: 0.7;
               transform: translateX(-40%);
+              -webkit-transform: translateX(-40%);
           }
           100% {
               opacity: 0.9;
               transform: translateX(-60%);
+              -webkit-transform: translateX(-60%);
           }
       }
       
@@ -149,9 +158,8 @@
       
       .blur {
           filter: blur(10px);
-          /* 初始模糊程度 */
           transition: filter 0.3s;
-          /* 平滑過渡效果 */
+          -webkit-transition: filter 0.3s;
       }
       
       .logoMain {
@@ -159,13 +167,16 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
           z-index: -1;
       }
       
       .personalInformation {
           margin: 2rem auto;
+          padding: 0 1%;
           .personalInfo-container {
               box-shadow: 8f, 0 0 60px rgba(43, 75, 144, 0.561) inset;
+              -webkit-box-shadow: 8f, 0 0 60px rgba(43, 75, 144, 0.561) inset;
               background-image: url('../img/personalIfoBG.webp');
               padding: 2rem 0;
           }
@@ -269,18 +280,22 @@
               left: 1%;
               height: 45%;
               transform: translate(0, -50%);
+              -webkit-transform: translate(0, -50%);
               @include pcLG {
                   transform: translate(0, -50%) scale(0.9);
+                  -webkit-transform: translate(0, -50%) scale(0.9);
               }
               @include pad {
                   display: block;
                   top: 97.5%;
                   left: 50%;
                   transform: translate(0, -50%) rotate(-90deg) scale(1.2);
+                  -webkit-transform: translate(0, -50%) rotate(-90deg) scale(1.2);
               }
               @include mobile {
                   top: 98.5%;
                   transform: translate(0, -50%) rotate(-90deg) scale(0.7);
+                  -webkit-transform: translate(0, -50%) rotate(-90deg) scale(0.7);
               }
           }
           .FLineAfter {
@@ -289,17 +304,21 @@
               right: 1%;
               height: 45%;
               transform: translate(0%, -50%);
+              -webkit-transform: translate(0%, -50%);
               @include pcLG {
                   transform: translate(0, -50%) scale(0.9);
+                  -webkit-transform: translate(0, -50%) scale(0.9);
               }
               @include pad {
                   top: 2.5%;
                   right: 50%;
                   transform: translate(0, -50%) rotate(-90deg) scale(1.2);
+                  -webkit-transform: translate(0, -50%) rotate(-90deg) scale(1.2);
               }
               @include mobile {
                   top: 1.5%;
                   transform: translate(0, -50%) rotate(-90deg) scale(0.7);
+                  -webkit-transform: translate(0, -50%) rotate(-90deg) scale(0.7);
               }
           }
       }
@@ -372,6 +391,7 @@
               top: 80%;
               left: 50%;
               transform: translate(-50%, -50%);
+              -webkit-transform: translate(-50%, -50%);
               width: 100px;
               height: 100px;
               z-index: 10;
@@ -379,6 +399,7 @@
               opacity: 0.8;
               @include pad {
                   transform: translate(-50%, -50%) scale(.8);
+                  -webkit-transform: translate(-50%, -50%) scale(.8);
               }
           }
       }
@@ -391,11 +412,14 @@
           }
           .p-topOther__linkImage {
               transition: transform 2s cubic-bezier(.22, 1, .36, 1);
+              -webkit-transition: transform 2s cubic-bezier(.22, 1, .36, 1);
               filter: blur(3px);
               transition: 1s ease;
+              -webkit-transition: 1s ease;
           }
           .p-topOther__linkThumb:hover .p-topOther__linkImage {
               transform: scale(1.1);
+              -webkit-transform: scale(1.1);
               filter: blur(0px);
           }
       }
@@ -413,6 +437,7 @@
           background: $azure;
           border: 3px solid $sky-blue;
           box-shadow: 0 0 0 $sky-blue;
+          -webkit-box-shadow: 0 0 0 $sky-blue;
           border-radius: .5rem;
           &:hover {
               border: $navy-blue;
@@ -420,7 +445,9 @@
               background: $gemstone-blue;
               border: 3px solid $sky-blue;
               box-shadow: 0 0 0 $sky-blue;
+              -webkit-box-shadow: 0 0 0 $sky-blue;
               transform: scale(1.2);
+              -webkit-transform: scale(1.2);
           }
           @include mobile {
               margin: 2rem auto;
@@ -497,6 +524,7 @@
               width: 500px;
               height: 500px;
               animation: spin 20s linear infinite;
+              -webkit-animation: spin 20s linear infinite;
               @include pcLG {
                   left: 2%;
                   width: 300px;
@@ -521,17 +549,17 @@
               @extend .clock;
               animation: none;
               transition: 1s all;
+              -webkit-transition: 1s all;
               cursor: pointer;
               &:hover {
                   transition: 1s all;
+                  -webkit-transition: 1s all;
                   transform: scale(1.2);
+                  -webkit-transform: scale(1.2);
               }
               @include pcLG {
-                  transform: scale(.8)
-              }
-              @include mobile {
-                  //   display: none;
-                  //   transform: scale(.3)
+                  transform: scale(.8);
+                  -webkit-transform: scale(.8);
               }
           }
       }
@@ -539,9 +567,11 @@
       @keyframes spin {
           from {
               transform: rotate(0deg);
+              -webkit-transform: rotate(0deg);
           }
           to {
               transform: rotate(-360deg);
+              -webkit-transform: rotate(-360deg);
           }
       }
       
@@ -567,12 +597,15 @@
           .tab-btn {
               padding: 2rem;
               transition: transform 0.3s ease;
+              -webkit-transition: transform 0.3s ease;
               transform: translate( 0, 16px);
+              -webkit-transform: translate( 0, 16px);
               background-color: $steel-blue;
               color: #f7f3eb;
           }
           .tab--active {
               transform: translate( 0, 0);
+              -webkit-transform: translate( 0, 0);
               background-color: #f7f3eb;
               color: $navy-blue;
           }
@@ -586,19 +619,6 @@
           }
       }
       
-      //   .line--d {
-      //       position: relative;
-      //       padding: 32px;
-      //        ::before {
-      //           content: '';
-      //           position: absolute;
-      //           top: 0;
-      //           left: 0;
-      //           width: 100%;
-      //           height: 100%;
-      //           border: #0d386a 2px solid;
-      //       }
-      //   }
       .careerRecord {
           padding: 64px auto;
           background: url("../img/careerRecordBG.jpg") no-repeat;
@@ -638,6 +658,7 @@
                   width: 7px;
                   height: 7px;
                   transform: translate(0, -50%) rotate(45deg);
+                  -webkit-transform: translate(0, -50%) rotate(45deg);
                   background-color: #fff;
               }
               &::before {
@@ -646,6 +667,7 @@
               &::after {
                   right: 0;
                   transform: translate(0, -50%) rotate(45deg);
+                  -webkit-transform: translate(0, -50%) rotate(45deg);
               }
           }
       }
@@ -702,6 +724,7 @@
               bottom: -18px;
               left: 50%;
               transform: translateX(-50%);
+              -webkit-transform: translateX(-50%);
               width: 116px;
               height: 18px;
               background: url("../img/titleD02.svg") no-repeat center;
