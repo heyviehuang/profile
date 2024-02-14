@@ -20,7 +20,7 @@ $position-values: ( 0: 0, 50: 50%, 100: 100%) !default;
 //斷點
 $grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px);
 //container大小
-$container-max-widths: (xxl: 1320px, xl: 1200px, lg: 960px, md: 640px, sm: 368px);
+$container-max-widths: (xxl: 1320px, xl: 1200px, lg: 960px, md: 640px, sm: 368px, xsm: 350px);
 //boder
 $border-width: 1px !default;
 $border-widths: ( 1: 1px, 2: 2px, 3: 3px, 4: 4px, 5: 5px) !default;

@@ -16,6 +16,9 @@
     @media (max-width: 425px) {
         max-width: map-get($container-max-widths, sm);
     }
+    @media (max-width: 375px) {
+        max-width: map-get($container-max-widths, xsm);
+    }
 }
 
 //header

@@ -633,6 +633,12 @@ button {
   }
 }
 
+@media (max-width: 375px) {
+  .wrap {
+    max-width: 350px;
+  }
+}
+
 header {
   height: 100vh;
 }
@@ -918,7 +924,7 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 425px) {
   .sectionTitle {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
