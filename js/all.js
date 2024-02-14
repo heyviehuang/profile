@@ -160,7 +160,7 @@ $(document).ready(function() {
     });
 
 
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 1024) {
         document.getElementById("FLine01").src = "./img/FLine2.svg";
         document.getElementById("FLine02").src = "./img/FLine2.svg";
     } else {

@@ -147,7 +147,7 @@ html {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   html {
     font-size: 12px;
   }
@@ -610,31 +610,25 @@ button {
 
 @media (max-width: 1440px) {
   .wrap {
-    max-width: 1200px;
+    padding: 0 10%;
   }
 }
 
 @media (max-width: 1024px) {
   .wrap {
-    max-width: 960px;
+    padding: 0 10%;
   }
 }
 
 @media (max-width: 768px) {
   .wrap {
-    max-width: 640px;
+    padding: 0 8%;
   }
 }
 
 @media (max-width: 500px) {
   .wrap {
-    max-width: 480px;
-  }
-}
-
-@media (max-width: 420px) {
-  .wrap {
-    max-width: 400px;
+    padding: 0 2%;
   }
 }
 
@@ -922,7 +916,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .sectionTitle {
     font-size: 4rem;
   }
@@ -1160,7 +1154,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .education {
     text-align: center;
   }
@@ -1171,7 +1165,7 @@ body::-webkit-scrollbar-thumb {
   margin-left: 8px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .workExperience table h4 {
     font-size: 1.2rem;
     font-weight: 700;
@@ -1199,7 +1193,7 @@ body::-webkit-scrollbar-thumb {
   bottom: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .webDesign:after {
     bottom: .5rem;
   }
@@ -1209,7 +1203,7 @@ body::-webkit-scrollbar-thumb {
   top: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .webDesign:before {
     top: .5rem;
   }
@@ -1245,14 +1239,14 @@ body::-webkit-scrollbar-thumb {
   -webkit-transform: translate(0, -50%);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .webDesign .FLineBefore {
     transform: translate(0, -50%) scale(0.9);
     -webkit-transform: translate(0, -50%) scale(0.9);
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .webDesign .FLineBefore {
     display: block;
     top: 97.5%;
@@ -1262,7 +1256,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .webDesign .FLineBefore {
     top: 98.5%;
     transform: translate(0, -50%) rotate(-90deg) scale(0.7);
@@ -1279,14 +1273,14 @@ body::-webkit-scrollbar-thumb {
   -webkit-transform: translate(0%, -50%);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .webDesign .FLineAfter {
     transform: translate(0, -50%) scale(0.9);
     -webkit-transform: translate(0, -50%) scale(0.9);
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .webDesign .FLineAfter {
     top: 2.5%;
     right: 50%;
@@ -1295,7 +1289,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .webDesign .FLineAfter {
     top: 1.5%;
     transform: translate(0, -50%) rotate(-90deg) scale(0.7);
@@ -1311,9 +1305,9 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0 10%;
@@ -1327,10 +1321,11 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 30%;
+  width: 29%;
+  margin: 2rem 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .listWEB li {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1344,7 +1339,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .listWEB li {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1367,13 +1362,13 @@ body::-webkit-scrollbar-thumb {
   margin-top: .5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .listWEB li .textContainer {
     padding-left: 2rem;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .listWEB li .textContainer {
     padding-left: 0;
   }
@@ -1391,7 +1386,16 @@ body::-webkit-scrollbar-thumb {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  margin-top: 2rem;
+  margin: 2rem 1rem;
+}
+
+@media (max-width: 500px) {
+  .listWEB .windowBig {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .listWEB .windowBig .textContainer {
@@ -1399,22 +1403,13 @@ body::-webkit-scrollbar-thumb {
   padding-left: 2rem;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .listWEB .windowBig .textContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     padding-left: 0;
-  }
-}
-
-@media (max-width: 425px) {
-  .listWEB .windowBig {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 
@@ -1505,7 +1500,7 @@ body::-webkit-scrollbar-thumb {
   -webkit-transform: scale(1.2);
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .workBtn {
     margin: 2rem auto;
   }
@@ -1546,7 +1541,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 8px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .infiniteslide img {
     max-width: 300px;
   }
@@ -1564,7 +1559,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .paintingWork {
     left: 0%;
     width: 100%;
@@ -1579,15 +1574,11 @@ body::-webkit-scrollbar-thumb {
   text-align: left;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .paintingWork .sectionTitle {
     left: 10%;
     bottom: 2rem;
   }
-}
-
-.paintingWork img {
-  height: 100%;
 }
 
 .paintingWork .clock, .paintingWork .clock-arrow {
@@ -1619,7 +1610,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .paintingWork .clock, .paintingWork .clock-arrow {
     top: 0;
     width: 150px;

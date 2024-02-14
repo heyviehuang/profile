@@ -251,13 +251,13 @@
           }
           &:after {
               bottom: 2rem;
-              @include pad {
+              @include pcLG {
                   bottom: .5rem;
               }
           }
           &:before {
               top: 2rem;
-              @include pad {
+              @include pcLG {
                   top: .5rem;
               }
           }
@@ -281,11 +281,11 @@
               height: 45%;
               transform: translate(0, -50%);
               -webkit-transform: translate(0, -50%);
-              @include pcLG {
+              @include pcXL {
                   transform: translate(0, -50%) scale(0.9);
                   -webkit-transform: translate(0, -50%) scale(0.9);
               }
-              @include pad {
+              @include pcLG {
                   display: block;
                   top: 97.5%;
                   left: 50%;
@@ -305,11 +305,11 @@
               height: 45%;
               transform: translate(0%, -50%);
               -webkit-transform: translate(0%, -50%);
-              @include pcLG {
+              @include pcXL {
                   transform: translate(0, -50%) scale(0.9);
                   -webkit-transform: translate(0, -50%) scale(0.9);
               }
-              @include pad {
+              @include pcLG {
                   top: 2.5%;
                   right: 50%;
                   transform: translate(0, -50%) rotate(-90deg) scale(1.2);
@@ -327,14 +327,15 @@
       .listWEB {
           display: flex;
           flex-direction: row;
-          justify-content: space-evenly;
+          justify-content: space-between;
           flex-wrap: wrap;
           padding: 0 10%;
           li {
               display: flex;
               flex-direction: column;
-              width: 30%;
-              @include pad {
+              width: 29%;
+              margin: 2rem 1rem;
+              @include pcLG {
                   flex-direction: row;
                   align-items: center;
                   margin: 2rem 1rem;
@@ -348,7 +349,7 @@
                   flex-direction: column;
                   justify-content: center;
                   margin-top: .5rem;
-                  @include pad {
+                  @include pcLG {
                       padding-left: 2rem;
                   }
                   @include mobile {
@@ -361,7 +362,10 @@
               flex-direction: row;
               align-items: center;
               width: 100%;
-              margin-top: 2rem;
+              margin: 2rem 1rem;
+              @include mobile {
+                  flex-direction: column;
+              }
               .textContainer {
                   text-align: left;
                   padding-left: 2rem;
@@ -369,9 +373,6 @@
                       flex-direction: column;
                       padding-left: 0;
                   }
-              }
-              @include mobile {
-                  flex-direction: column;
               }
           }
       }
@@ -515,9 +516,9 @@
                   bottom: 2rem;
               }
           }
-          img {
-              height: 100%;
-          }
+          //   img {
+          //       height: 100%;
+          //   }
           .clock {
               position: absolute;
               top: 0;

@@ -5,19 +5,20 @@
     // width: 100%;
     max-width: 1320px;
     @media (max-width: 1440px) {
-        max-width: map-get($container-max-widths, xl);
+        // max-width: map-get($container-max-widths, xl);
+        padding: 0 10%;
     }
     @media (max-width: 1024px) {
-        max-width: map-get($container-max-widths, lg);
+        // max-width: map-get($container-max-widths, lg);
+        padding: 0 10%;
     }
     @media (max-width: 768px) {
-        max-width: map-get($container-max-widths, md);
+        // max-width: map-get($container-max-widths, md);
+        padding: 0 8%;
     }
     @media (max-width: 500px) {
-        max-width: map-get($container-max-widths, sm);
-    }
-    @media (max-width: 420px) {
-        max-width: map-get($container-max-widths, xsm);
+        // max-width: map-get($container-max-widths, sm);
+        padding: 0 2%;
     }
 }
 
