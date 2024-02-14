@@ -336,6 +336,7 @@
               width: 30%;
               @include pad {
                   flex-direction: row;
+                  align-items: center;
                   margin: 2rem 1rem;
                   width: 100%;
               }

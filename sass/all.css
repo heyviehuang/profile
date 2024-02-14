@@ -605,7 +605,6 @@ button {
 
 .wrap {
   margin: 0 auto;
-  width: 100%;
   max-width: 1320px;
 }
 
@@ -627,15 +626,15 @@ button {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .wrap {
-    max-width: 368px;
+    max-width: 480px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 420px) {
   .wrap {
-    max-width: 350px;
+    max-width: 400px;
   }
 }
 
@@ -1337,6 +1336,9 @@ body::-webkit-scrollbar-thumb {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 2rem 1rem;
     width: 100%;
   }
