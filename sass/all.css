@@ -586,6 +586,7 @@ button {
   transition: .1s ease;
   -webkit-transition: .1s ease;
   font-family: "Noto Sans TC", sans-serif;
+  z-index: 102;
 }
 
 .webOnWorkModal .closeBtn:hover {
