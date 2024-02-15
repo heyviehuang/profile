@@ -55,7 +55,7 @@ $(document).ready(function() {
         var scrollPos = $(window).scrollTop();
         var windowHeight = $(window).height();
         // animated
-        $('.animated-t,.animated-r,.animated-b,.animated-l,.animated-m').each(function() {
+        $('.animT,.animR,.animB,.animL,.animM').each(function() {
             var thisPos = $(this).offset().top;
             if ((windowHeight + scrollPos) >= thisPos) {
                 $(this).addClass('fadeIn');

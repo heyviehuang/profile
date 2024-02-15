@@ -36,8 +36,10 @@
       width: 476px;
       margin: 0 auto;
       @include pad {
-          transform: translate(-50%, -50%) scale(0.7);
-          -webkit-transform: translate(-50%, -50%) scale(0.7);
+          width: 400px;
+      }
+      @include mobile {
+          width: 250px;
       }
   }
   
@@ -199,6 +201,20 @@
       }
   }
   
+  .headShot {
+      margin-bottom: 2rem;
+      width: 400px;
+      @include pcLG {
+          width: 270px;
+      }
+      @include pad {
+          width: 250px;
+      }
+      @include mobile {
+          width: 200px;
+      }
+  }
+  
   .education {
       display: flex;
       justify-content: space-center;
@@ -206,15 +222,19 @@
       text-align: left;
       padding: 2rem;
       .textContainer {
-          h2 {
-              margin-bottom: 2rem;
-          }
           padding-left: 2rem;
+          h2 {
+              margin-bottom: 2.2rem;
+              @include pcLG {
+                  font-size: 2rem;
+              }
+              @include pad {
+                  font-size: 2.5rem;
+              }
+          }
       }
       @include pad {
           flex-direction: column;
-      }
-      @include mobile {
           text-align: center;
       }
   }
@@ -247,12 +267,6 @@
           @include pad {
               display: block;
           }
-      }
-  }
-  
-  .skill {
-      h4 {
-          font-weight: 500;
       }
   }
   
@@ -371,6 +385,7 @@
               flex-direction: column;
               justify-content: center;
               margin-top: .5rem;
+              width: 100%;
               @include pcLG {
                   padding-left: 2rem;
               }
@@ -391,6 +406,7 @@
           .textContainer {
               text-align: left;
               padding-left: 2rem;
+              width: 100%;
               @include mobile {
                   flex-direction: column;
                   padding-left: 0;
@@ -503,7 +519,6 @@
       }
       p {
           margin: 0 1rem;
-          text-align: center;
       }
       .jtfsList,
       .mycardList {
@@ -512,6 +527,9 @@
           margin-top: 1rem;
           li {
               margin: 0 1rem;
+              @include pad {
+                  margin: 0 0.5rem;
+              }
           }
       }
       img {
@@ -552,7 +570,7 @@
   
   .paintingWork {
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
       position: relative;
       overflow: hidden;
       width: 100%;
