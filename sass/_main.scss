@@ -511,7 +511,7 @@
   }
   
   .webOnWorkModal {
-      background: #b1e1fff9 url('../img/gridDK0clear256.png') repeat center;
+      background: #b1e1fff9 url('../img/stripeAD0clear256.png') repeat center;
       .sectionTitle {
           margin: 3rem 0 1rem;
           font-size: 2rem;
@@ -519,14 +519,18 @@
       }
       p {
           margin: 0 1rem;
+          text-align: center;
       }
       .jtfsList,
       .mycardList {
           display: flex;
+          flex-direction: row;
           justify-content: space-evenly;
+          flex-wrap: wrap;
           margin-top: 1rem;
           li {
-              margin: 0 1rem;
+              margin: 1rem 1rem;
+              width: 500px;
               @include pad {
                   margin: 0 0.5rem;
               }

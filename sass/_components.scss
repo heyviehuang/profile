@@ -222,7 +222,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(1, 24, 42, 0.865);
+    background-color: rgba(43, 43, 43, 0.865);
     z-index: 100;
 }
 
@@ -236,7 +236,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    width: 80%;
+    width: 95%;
     height: 80%;
     padding: 2rem;
     background-color: $cornflower-blue;
@@ -253,13 +253,12 @@
     }
     .contentContainer {
         max-height: 100%;
-        padding: 2rem 10%;
         overflow-y: auto;
         @include custom-scrollbar($sapphire,
         $cornflower-blue,
         6px);
         @include pad {
-            padding: 2rem 10%;
+            padding: 2rem 3%;
         }
         @include mobile {
             padding: 2rem 1%;
@@ -276,8 +275,8 @@
         transition: .5s all;
         -webkit-transition: 1s all;
         &:hover {
-            transform: scale(1.1);
-            -webkit-transform: scale(1.1);
+            transform: scale(1.02);
+            -webkit-transform: scale(1.02);
         }
     }
     .closeBtn {
@@ -289,8 +288,9 @@
         -webkit-transition: .1s ease;
         font-family: "Noto Sans TC", sans-serif;
         &:hover {
-            transform: rotate(360deg) scale(1.2);
-            -webkit-transform: rotate(360deg) scale(1.2);
+            color: $sapphire;
+            transform: rotate(360deg) scale(1.1);
+            -webkit-transform: rotate(360deg) scale(1.1);
         }
     }
 }
