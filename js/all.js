@@ -61,6 +61,14 @@ $(document).ready(function() {
                 $(this).addClass('fadeIn');
             }
         });
+        $('.blurIncontainer').each(function() {
+            var thisPos = $(this).offset().top;
+            if ((windowHeight + scrollPos) >= thisPos) {
+                $(this).find('char,.char01').css({ 'animation-name': 'blurInAnim', 'animation-duration': '1.6s', 'animation-delay': '0s', 'animation-fill-mode': 'forwards' });
+                $(this).find('char,.char02').css({ 'animation-name': 'blurInAnim', 'animation-duration': '1.6s', 'animation-delay': '0.16s', 'animation-fill-mode': 'forwards' });
+                $(this).find('char,.char03').css({ 'animation-name': 'blurInAnim', 'animation-duration': '1.6s', 'animation-delay': '0.32s', 'animation-fill-mode': 'forwards' });
+            }
+        });
     });
 
 

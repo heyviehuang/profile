@@ -312,6 +312,8 @@
     opacity: 0;
     transition: all 1.5s;
     -webkit-transition: all 1.5s;
+    transition-delay: 0.16s;
+    -webkit-transition-delay: 0.16s;
 }
 
 .animT {
@@ -345,5 +347,31 @@
 .fadeIn {
     opacity: 1;
     transform: translateX(0);
+    -webkit-transform: translateX(0);
     transform: translateY(0);
+    -webkit-transform: translateY(0);
+}
+
+// 文字模糊淡入動畫
+.blurIncontainer {
+    .char {
+        opacity: 0;
+        transition: transform 1.6s cubic-bezier(.19, 1, .22, 1), filter 1.2s cubic-bezier(.215, .61, .355, 1);
+        -webkit-transition: transform 1.6s cubic-bezier(.19, 1, .22, 1), filter 1.2s cubic-bezier(.215, .61, .355, 1);
+    }
+}
+
+@keyframes blurInAnim {
+    from {
+        filter: blur(20px);
+        opacity: 0;
+        transform: translate(0, 100%) scale(1.5);
+        -webkit-transform: translate(0, 100%) scale(1.5);
+    }
+    to {
+        filter: none;
+        opacity: 1;
+        transform: translate(0 0) scale(1.5);
+        -webkit-transform: translate(0 0) scale(1.5);
+    }
 }
