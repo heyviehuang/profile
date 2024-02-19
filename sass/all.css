@@ -879,7 +879,7 @@ body::-webkit-scrollbar-thumb {
 }
 @media (max-width: 768px) {
   .dynamicBG-container {
-    background: url("../img/img-bg-main.jpg") bottom no-repeat;
+    background: url("../img/fgCloudMB.webp") bottom no-repeat;
     background-size: cover;
   }
 }
@@ -891,7 +891,7 @@ body::-webkit-scrollbar-thumb {
   bottom: 0;
   width: 1898px;
   height: 601px;
-  background: url("../img/img-bgItem-cloud.png") repeat-x;
+  background: url("../img/fgCloudPC.webp") repeat-x;
   background-size: cover;
   animation-duration: 200s;
   -webkit-animation-duration: 200s;
@@ -1556,7 +1556,7 @@ body::-webkit-scrollbar-thumb {
 
 .careerRecord {
   padding: 64px auto;
-  background: url("../img/careerRecordBG.jpg") no-repeat;
+  background: url("../img/careerRecordBG.webp") no-repeat;
   background-size: cover;
 }
 .careerRecord .sectionTitle {
