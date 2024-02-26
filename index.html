@@ -23,6 +23,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./sass/all.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J95MMXKCG7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-J95MMXKCG7');
+    </script>
 </head>
 
 <body id="body">
@@ -170,12 +181,12 @@
                                         <h5 class="animL">✦ Photoshop　✦ Illustrator　✦ Painter　✦ Clip Studio Paint　✦ Procreate</h5>
                                     </li>
                                     <li>
-                                        <h4 class="animB">程式設計</h4>
-                                        <h5 class="animL">✦ HTML　✦ CSS　✦ SASS　✦ jQuery　✦ JavaScript　✦Bootstrap　✦WordPress　✦ C#</h5>
+                                        <h4 class="animB">網頁設計</h4>
+                                        <h5 class="animL">✦ HTML　✦ CSS　✦ SASS　✦ jQuery　✦ JavaScript　✦Bootstrap　✦WordPress</h5>
                                     </li>
                                     <li>
                                         <h4 class="animB">遊戲設計</h4>
-                                        <h5 class="animL">✦ Unity3D　✦ DragonBones　✦ 3ds Max　✦ Egret Engine</h5>
+                                        <h5 class="animL">✦ Unity3D　✦ DragonBones　✦ 3ds Max　✦ C#　✦ Egret Engine</h5>
                                     </li>
                                     <li>
                                         <h4 class="animB">專案溝通</h4>
@@ -258,9 +269,8 @@
                         </div>
                     </li>
                 </ul>
-
                 <!-- 實務經驗BTN -->
-                <div class="pulse" data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-delay="500" data-aos-offset="0" data-aos-duration="300">
+                <!-- <div class="pulse" data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-delay="500" data-aos-offset="0" data-aos-duration="300">
                     <button id="openModalBtn" class="btn workBtn">
                         <h4>
                             Web Design on work
@@ -380,138 +390,130 @@
                           </svg>
                         </div>
                 </button>
-                </div>
-
-                <!-- 實務經驗彈窗 -->
-                <div class="overlay"></div>
-                <div class="webOnWorkModal">
-                    <span class="closeBtn material-icons md-48">
-                        X
-                    </span>
-                    <div class="contentContainer">
-                        <h4 class="sectionTitle blurIncontainer">
-                            <span class="char char01">❈</span><span class="char char02"> 金田餐飲 </span><span class="char char03">❈</span>
-                        </h4>
-                        <p>目前在金田餐飲擔任網頁設計師，除了負責公司官網以外，也負責公司旗下六個餐飲品牌的官網設計與維護。</p>
-                        <ul class="jtfsList">
-                            <li>
-                                <a class="anim-sparkle" href="https://jtfs.com.tw/" target="_blank">
-                                    <img src="./img/jtfs00.webp" alt="">
-                                </a>
-                                <h5 class="animL">【金田餐飲官網】</h5>
-                            </li>
-                        </ul>
-                        <ul class="jtfsList">
-                            <li>
-                                <a class="anim-sparkle" href="https://nara.com.tw/" target="_blank">
-                                    <img src="./img/jtfs01.webp" alt="">
-                                </a>
-                                <h5 class="animL">【NARA Thai Cuisine】</h5>
-                            </li>
-                            <li>
-                                <a class="anim-sparkle" href="https://ladynara.com.tw/" target="_blank">
-                                    <img src="./img/jtfs02.webp" alt="">
-                                </a>
-                                <h5 class="animL">【Lady nara】</h5>
-                            </li>
-                            <li>
-                                <a class="anim-sparkle" href="https://sarabeth.com.tw/" target="_blank">
-                                    <img src="./img/jtfs03.webp" alt="">
-                                </a>
-                                <h5 class="animL">【Sarabeth’s】</h5>
-                            </li>
-                            <li>
-                                <a class="anim-sparkle" href="https://tokyo-sundubu.com.tw/" target="_blank">
-                                    <img src="./img/jtfs04.webp" alt="">
-                                </a>
-                                <h5 class="animL">【Tokyo Sundubu】</h5>
-                            </li>
-                            <li>
-                                <a class="anim-sparkle" href="https://capricciosa.com.tw/" target="_blank">
-                                    <img src="./img/jtfs05.webp" alt="">
-                                </a>
-                                <h5 class="animL">【Capricciosa Premium】</h5>
-                            </li>
-                            <li>
-                                <a class="anim-sparkle" href="https://kimukatsu.com.tw/" target="_blank">
-                                    <img src="./img/jtfs06.webp" alt="">
-                                </a>
-                                <h5 class="animL">【Kimukatsu】</h5>
-                            </li>
-                        </ul>
-                        <h4 class="sectionTitle blurIncontainer">
-                            <span class="char char01">❈</span><span class="char char02"> 智冠科技 </span><span class="char char03">❈</span>
-                        </h4>
-                        <p>曾在智冠科技從事平面/網頁設計師，MyCard 官網行銷活動，包含<br/> 〚會員活動〛頁面為智冠每月會員活動網頁，是曾實際上線的在MyCard官網的網頁，負責網頁主視覺的部分，切版部分並非我本人;
-                            <br/> 〚事前登錄〛頁面因不同活動檔期有不同的主視覺設計，我負責網頁主視覺，也負責切版，網頁裡的遊戲頭像非本人製作，僅供還原當時作品使用，活動連結不會跳轉出去，表單不會送出。</p>
-                        <ul class="mycardList">
-                            <li>
-                                <a class="anim-sparkle" href="https://www.mycard520.com.tw/zh-tw" target="_blank">
-                                    <img src="./img/mycard00.webp" alt="">
-                                </a>
-                                <h5 class="animL">【MyCard官網】</h5>
-                            </li>
-                        </ul>
-                        <ul class="mycardList">
-                            <li>
-                                <a class="anim-sparkle" href="https://app.mycard520.com.tw/202301memberevent/" target="_blank">
-                                    <img src="./img/mycard01.webp" alt="">
-                                </a>
-                                <h5 class="animL">【2023年1月會員活動】</h5>
-                            </li>
-                            <li>
-                                <a class="anim-sparkle" href="https://app.mycard520.com.tw/202211memberevent/" target="_blank">
-                                    <img src="./img/mycard02.webp" alt="">
-                                </a>
-                                <h5 class="animL">【2022年11月會員活動】</h5>
-                            </li>
-                            <li>
-                                <a class="anim-sparkle" href="https://app.mycard520.com.tw/202210memberevent/" target="_blank">
-                                    <img src="./img/mycard03.webp" alt="">
-                                </a>
-                                <h5 class="animL">【2022年10月會員活動】</h5>
-                            </li>
-                            <li>
-                                <a class="anim-sparkle" href="https://heyviehuang.github.io/202301preregister/" target="_blank">
-                                    <img src="./img/mycard04.webp" alt="">
-                                </a>
-                                <h5 class="animL">【2023年1月事前登錄活動】</h5>
-                            </li>
-                            <li>
-                                <a class="anim-sparkle" href="https://heyviehuang.github.io/202211preregister/" target="_blank">
-                                    <img src="./img/mycard05.webp" alt="">
-                                </a>
-                                <h5 class="animL">【2022年11月事前登錄活動】</h5>
-                            </li>
-                            <li>
-                                <a class="anim-sparkle" href="https://heyviehuang.github.io/202210preregister/" target="_blank">
-                                    <img src="./img/mycard06.webp" alt="">
-                                </a>
-                                <h5 class="animL">【2022年10月事前登錄活動】</h5>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
+                </div> -->
                 <img id="FLine02" class="FLineAfter" src="./img/FLine.svg" alt="裝飾線">
+            </div>
+            <!-- 實務經驗彈窗 -->
+            <!-- <div class="overlay"></div> -->
+            <div class="webOnWorkModal">
+                <!-- <span class="closeBtn material-icons md-48">
+                                    X
+                </span> -->
+                <div class="contentContainer">
+                    <h4 style="margin-top: 0;" class="sectionTitle blurIncontainer">
+                        <span class="char char01">❈</span><span class="char char02"> 金田餐飲 </span><span class="char char03">❈</span>
+                    </h4>
+                    <p>目前在金田餐飲擔任網頁設計師，除了負責公司官網以外，也負責公司旗下六個餐飲品牌的官網設計與維護。</p>
+                    <ul class="jtfsList">
+                        <li>
+                            <a class="anim-sparkle" href="https://jtfs.com.tw/" target="_blank">
+                                <img src="./img/jtfs00.webp" alt="">
+                            </a>
+                            <h5 class="animL">【金田餐飲官網】</h5>
+                        </li>
+                    </ul>
+                    <ul class="jtfsList">
+                        <li>
+                            <a class="anim-sparkle" href="https://nara.com.tw/" target="_blank">
+                                <img src="./img/jtfs01.webp" alt="">
+                            </a>
+                            <h5 class="animL">【NARA Thai Cuisine】</h5>
+                        </li>
+                        <li>
+                            <a class="anim-sparkle" href="https://ladynara.com.tw/" target="_blank">
+                                <img src="./img/jtfs02.webp" alt="">
+                            </a>
+                            <h5 class="animL">【Lady nara】</h5>
+                        </li>
+                        <li>
+                            <a class="anim-sparkle" href="https://sarabeth.com.tw/" target="_blank">
+                                <img src="./img/jtfs03.webp" alt="">
+                            </a>
+                            <h5 class="animL">【Sarabeth’s】</h5>
+                        </li>
+                        <li>
+                            <a class="anim-sparkle" href="https://tokyo-sundubu.com.tw/" target="_blank">
+                                <img src="./img/jtfs04.webp" alt="">
+                            </a>
+                            <h5 class="animL">【Tokyo Sundubu】</h5>
+                        </li>
+                        <li>
+                            <a class="anim-sparkle" href="https://capricciosa.com.tw/" target="_blank">
+                                <img src="./img/jtfs05.webp" alt="">
+                            </a>
+                            <h5 class="animL">【Capricciosa Premium】</h5>
+                        </li>
+                        <li>
+                            <a class="anim-sparkle" href="https://kimukatsu.com.tw/" target="_blank">
+                                <img src="./img/jtfs06.webp" alt="">
+                            </a>
+                            <h5 class="animL">【Kimukatsu】</h5>
+                        </li>
+                    </ul>
+                    <h4 class="sectionTitle blurIncontainer">
+                        <span class="char char01">❈</span><span class="char char02"> 智冠科技 </span><span class="char char03">❈</span>
+                    </h4>
+                    <p>曾在智冠科技從事平面/網頁設計師，MyCard 官網行銷活動，包含<br/> 〚會員活動〛頁面為智冠每月會員活動網頁，是曾實際上線的在MyCard官網的網頁，負責網頁主視覺的部分，切版部分並非我本人;
+                        <br/> 〚事前登錄〛頁面因不同活動檔期有不同的主視覺設計，我負責網頁主視覺，也負責切版，網頁裡的遊戲頭像非本人製作，僅供還原當時作品使用，活動連結不會跳轉出去，表單不會送出。</p>
+                    <ul class="mycardList">
+                        <li>
+                            <a class="anim-sparkle" href="https://www.mycard520.com.tw/zh-tw" target="_blank">
+                                <img src="./img/mycard00.webp" alt="">
+                            </a>
+                            <h5 class="animL">【MyCard官網】</h5>
+                        </li>
+                    </ul>
+                    <ul class="mycardList">
+                        <li>
+                            <a class="anim-sparkle" href="https://app.mycard520.com.tw/202301memberevent/" target="_blank">
+                                <img src="./img/mycard01.webp" alt="">
+                            </a>
+                            <h5 class="animL">【2023年1月會員活動】</h5>
+                        </li>
+                        <li>
+                            <a class="anim-sparkle" href="https://app.mycard520.com.tw/202211memberevent/" target="_blank">
+                                <img src="./img/mycard02.webp" alt="">
+                            </a>
+                            <h5 class="animL">【2022年11月會員活動】</h5>
+                        </li>
+                        <li>
+                            <a class="anim-sparkle" href="https://app.mycard520.com.tw/202210memberevent/" target="_blank">
+                                <img src="./img/mycard03.webp" alt="">
+                            </a>
+                            <h5 class="animL">【2022年10月會員活動】</h5>
+                        </li>
+                        <li>
+                            <a class="anim-sparkle" href="https://heyviehuang.github.io/202301preregister/" target="_blank">
+                                <img src="./img/mycard04.webp" alt="">
+                            </a>
+                            <h5 class="animL">【2023年1月事前登錄活動】</h5>
+                        </li>
+                        <li>
+                            <a class="anim-sparkle" href="https://heyviehuang.github.io/202211preregister/" target="_blank">
+                                <img src="./img/mycard05.webp" alt="">
+                            </a>
+                            <h5 class="animL">【2022年11月事前登錄活動】</h5>
+                        </li>
+                        <li>
+                            <a class="anim-sparkle" href="https://heyviehuang.github.io/202210preregister/" target="_blank">
+                                <img src="./img/mycard06.webp" alt="">
+                            </a>
+                            <h5 class="animL">【2022年10月事前登錄活動】</h5>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="graphicContainer">
                 <!-- 菜單跑馬燈 -->
                 <div class="banner" data-aos="fade-right" data-aos-offset="300" data-aos-easing="linear" data-aos-delay="300" data-aos-duration="1000">
-                    <!-- 菜單01 -->
                     <ul class="infiniteslide" data-direction="right" data-clone="2">
-                        <li>
-                            <img src="./img/bn01.webp" alt="">
-                        </li>
-                        <!-- <li>
-                            <img src="./img/bn02.webp" alt="">
-                        </li> -->
                         <li>
                             <img src="./img/bn03.webp" alt="">
                         </li>
                         <li>
                             <img src="./img/bn04.webp" alt="">
                         </li>
+
                         <li>
                             <img src="./img/bn05.webp" alt="">
                         </li>
@@ -521,14 +523,21 @@
                         <li>
                             <img src="./img/bn07.webp" alt="">
                         </li>
-                        <li>
+
+                        <!-- <li>
                             <img src="./img/bn08.webp" alt="">
-                        </li>
+                        </li> -->
                         <li>
                             <img src="./img/bn09.webp" alt="">
                         </li>
                         <li>
                             <img src="./img/bn10.webp" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/bn01.webp" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/bn02.webp" alt="">
                         </li>
                     </ul>
                     <h3 class="sectionTitle blurIncontainer">
@@ -554,12 +563,12 @@
                                 <div class="swiper-slide">
                                     <img src="./img/painting01.webp" />
                                 </div>
-                                <div class="swiper-slide">
+                                <!-- <div class="swiper-slide">
                                     <img src="./img/painting02.webp" />
-                                </div>
-                                <div class="swiper-slide">
+                                </div> -->
+                                <!-- <div class="swiper-slide">
                                     <img src="./img/painting03.webp" />
-                                </div>
+                                </div> -->
                                 <div class="swiper-slide">
                                     <img src="./img/painting04.webp" />
                                 </div>
@@ -569,18 +578,18 @@
                                 <div class="swiper-slide">
                                     <img src="./img/painting06.webp" />
                                 </div>
-                                <div class="swiper-slide">
+                                <!-- <div class="swiper-slide">
                                     <img src="./img/painting07.webp" />
-                                </div>
-                                <div class="swiper-slide">
+                                </div> -->
+                                <!-- <div class="swiper-slide">
                                     <img src="./img/painting08.webp" />
-                                </div>
-                                <div class="swiper-slide">
+                                </div> -->
+                                <!-- <div class="swiper-slide">
                                     <img src="./img/painting09.webp" />
-                                </div>
-                                <div class="swiper-slide">
+                                </div> -->
+                                <!-- <div class="swiper-slide">
                                     <img src="./img/painting10.webp" />
-                                </div>
+                                </div> -->
                                 <div class="swiper-slide">
                                     <img src="./img/painting12.webp" />
                                 </div>

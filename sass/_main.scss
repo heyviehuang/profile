@@ -7,6 +7,7 @@
   }
   
   .webDesign,
+  .webOnWorkModal,
   .banner,
   .paintingWork,
   .gameWorkByUnity,
@@ -272,7 +273,7 @@
   
   .webDesign {
       position: relative;
-      background-color: #f7f3eb;
+      background-color: $light-ivory;
       overflow: hidden;
       &:after,
       &:before {
@@ -511,11 +512,12 @@
   }
   
   .webOnWorkModal {
-      background: #b1e1fff9 url('../img/stripeAD0clear256.png') repeat center;
+      background: #ede5d5 url('../img/stripeAD0clear256.png') repeat center;
       .sectionTitle {
           margin: 3rem 0 1rem;
           font-size: 2rem;
           color: $sapphire;
+          line-height: 1;
       }
       p {
           margin: 0 1rem;

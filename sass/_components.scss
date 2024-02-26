@@ -230,19 +230,19 @@
 /* 彈窗內容 */
 
 .webOnWorkModal {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    width: 95%;
-    height: 80%;
+    // display: none;
+    // position: fixed;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // -webkit-transform: translate(-50%, -50%);
+    // width: 95%;
+    // height: 80%;
     padding: 2rem;
-    background-color: $cornflower-blue;
-    border: 2px solid #FFFFFF;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #FFFFFF;
+    background-color: $light-ivory;
+    // border: 2px solid #FFFFFF;
+    // border-radius: 5px;
+    // box-shadow: 0 0 5px #FFFFFF;
     z-index: 101;
     overflow: hidden;
     @include pad {

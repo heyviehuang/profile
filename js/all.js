@@ -156,16 +156,16 @@ $(document).ready(function() {
     });
 
     // 打開彈窗
-    $("#openModalBtn").click(function() {
-        $("body").addClass("no-scroll");
-        $(".overlay, .webOnWorkModal").fadeIn();
-    });
+    // $("#openModalBtn").click(function() {
+    //     $("body").addClass("no-scroll");
+    //     $(".overlay, .webOnWorkModal").fadeIn();
+    // });
 
     // 關閉彈窗
-    $(".closeBtn, .overlay").click(function() {
-        $("body").removeClass("no-scroll");
-        $(".overlay, .webOnWorkModal").fadeOut();
-    });
+    // $(".closeBtn, .overlay").click(function() {
+    //     $("body").removeClass("no-scroll");
+    //     $(".overlay, .webOnWorkModal").fadeOut();
+    // });
 
 
     if (window.innerWidth <= 1024) {
